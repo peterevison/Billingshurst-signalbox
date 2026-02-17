@@ -1,0 +1,1843 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "5b0fd13b-e5ec-43f6-87cb-e6f655446a0a")
+	(paper "A4")
+	(title_block
+		(title "8-Channel Relay Module")
+		(date "2026-02-09")
+		(rev "A")
+		(company "Amberley Museum - Billingshurst Signal Box")
+	)
+	(lib_symbols
+		(symbol "power:+10V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+10V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+10V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+10V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+10V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(wire
+		(pts
+			(xy 203.2 73.66) (xy 209.55 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08ca8cbc-4ebc-4cbb-abdd-ef03b9ba11bc")
+	)
+	(wire
+		(pts
+			(xy 149.225 76.2) (xy 158.75 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "129cdc90-9974-4aac-90f7-667f98b17ad6")
+	)
+	(wire
+		(pts
+			(xy 73.025 76.2) (xy 82.55 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bd2c02e-f31b-45bb-bedc-2d8e01a18dbc")
+	)
+	(wire
+		(pts
+			(xy 127 73.66) (xy 133.35 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ce42cfc-bbc1-4f6c-99a1-06a719ab6874")
+	)
+	(wire
+		(pts
+			(xy 73.025 95.25) (xy 82.55 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "380c4bd4-c401-433f-83ed-22893c3b6849")
+	)
+	(wire
+		(pts
+			(xy 127 78.74) (xy 133.35 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "432b0fea-3ccc-4bb4-9044-f7f63b6f23e6")
+	)
+	(wire
+		(pts
+			(xy 127 40.64) (xy 133.35 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4926be91-cc3e-4909-a9bd-724e6bd2e59a")
+	)
+	(wire
+		(pts
+			(xy 203.2 40.64) (xy 209.55 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c02275b-9c18-4118-a85c-686fbaee0cfd")
+	)
+	(wire
+		(pts
+			(xy 149.225 95.25) (xy 158.75 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "647a1b44-899a-4af7-ad8a-e60fc87ef20b")
+	)
+	(wire
+		(pts
+			(xy 149.225 57.15) (xy 158.75 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67ced26b-6a2b-4eaf-82fe-2c20a4e4da69")
+	)
+	(wire
+		(pts
+			(xy 203.2 92.71) (xy 209.55 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74d187e1-27fe-4970-a04e-d513cf425486")
+	)
+	(wire
+		(pts
+			(xy 127 59.69) (xy 133.35 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7977abf0-b993-4085-a1a4-aa331abf9a00")
+	)
+	(wire
+		(pts
+			(xy 149.225 38.1) (xy 158.75 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a3e3bb2-e468-4805-a943-7f5757452d68")
+	)
+	(wire
+		(pts
+			(xy 127 35.56) (xy 133.35 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cbeadf9-e071-4b18-b976-1784534dfedd")
+	)
+	(wire
+		(pts
+			(xy 127 54.61) (xy 133.35 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d9b240c-1e99-429a-818a-815ef86e756c")
+	)
+	(wire
+		(pts
+			(xy 127 97.79) (xy 133.35 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e34034b-1e99-49bf-87a4-7f3bd16984d0")
+	)
+	(wire
+		(pts
+			(xy 203.2 35.56) (xy 209.55 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a88dac56-f52f-4db8-be56-18e6a276592c")
+	)
+	(wire
+		(pts
+			(xy 203.2 78.74) (xy 209.55 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1cf167d-c373-40b6-888d-3b68f886ae78")
+	)
+	(wire
+		(pts
+			(xy 127 92.71) (xy 133.35 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d63c91e9-d441-4fad-a262-74f1b81b24d1")
+	)
+	(wire
+		(pts
+			(xy 203.2 54.61) (xy 209.55 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d84fd721-4a96-4649-aeb0-7ccbd413ed8e")
+	)
+	(wire
+		(pts
+			(xy 203.2 97.79) (xy 209.55 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e98f6ace-ccd1-450d-8465-217abd19cd42")
+	)
+	(wire
+		(pts
+			(xy 73.025 38.1) (xy 82.55 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebb57c4e-dbaa-4a4d-b2c8-65efe92475a1")
+	)
+	(wire
+		(pts
+			(xy 203.2 59.69) (xy 209.55 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eedf84a9-f239-43eb-8ce7-fe9406873d6d")
+	)
+	(wire
+		(pts
+			(xy 73.025 57.15) (xy 82.55 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fee4a3ae-d067-4d1e-bae3-1e76b5d2f96d")
+	)
+	(hierarchical_label "o{slash}p3"
+		(shape output)
+		(at 133.35 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "091c3c82-0428-4fe3-b8f7-5a41570be92b")
+	)
+	(hierarchical_label "D4"
+		(shape input)
+		(at 73.025 95.25 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0983fdc7-6d42-4198-b2e3-bb00db584070")
+	)
+	(hierarchical_label "D5"
+		(shape input)
+		(at 149.225 38.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "14c95870-a7ae-49c3-b538-3d32660f253c")
+	)
+	(hierarchical_label "D6"
+		(shape input)
+		(at 149.225 57.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4a6b856c-ff63-4928-8013-60937f006c2c")
+	)
+	(hierarchical_label "D3"
+		(shape input)
+		(at 73.025 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4e62e3b9-d28d-49cb-84f1-f615cc1bd50b")
+	)
+	(hierarchical_label "Bell_B12"
+		(shape output)
+		(at 209.55 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "519d2b60-d8f2-43d8-b2f7-f3fa5599d604")
+	)
+	(hierarchical_label "o{slash}p4"
+		(shape output)
+		(at 133.35 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5b74a5e8-3419-407a-84d1-086003ac90da")
+	)
+	(hierarchical_label "D1"
+		(shape input)
+		(at 73.025 38.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "66d10a49-d9b2-4df3-bf1b-55331c3d03e4")
+	)
+	(hierarchical_label "o{slash}p8"
+		(shape output)
+		(at 209.55 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6a96adc8-0925-48d9-ab44-bbd0ac0d48aa")
+	)
+	(hierarchical_label "D2"
+		(shape input)
+		(at 73.025 57.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "81932b39-c4a1-43e2-b889-e1383092cfa7")
+	)
+	(hierarchical_label "D7"
+		(shape input)
+		(at 149.225 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "89a862cc-532d-44d5-97b6-c8ea6ba1b2bf")
+	)
+	(hierarchical_label "o{slash}p7"
+		(shape output)
+		(at 209.55 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "89d6859a-13a0-40d2-9c4f-60c493d86c66")
+	)
+	(hierarchical_label "o{slash}p6"
+		(shape output)
+		(at 209.55 59.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b0d0c106-828f-4448-bed7-d4f2026fd448")
+	)
+	(hierarchical_label "o{slash}p5"
+		(shape output)
+		(at 209.55 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d65867c5-cfb2-48be-a524-fbcad2c8aaaa")
+	)
+	(hierarchical_label "o/p2"
+		(shape output)
+		(at 133.35 59.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d7e0751b-960c-4c1c-b742-81a2f05c5a89")
+	)
+	(hierarchical_label "D8"
+		(shape input)
+		(at 149.225 95.25 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dd364c5b-b859-4a60-a166-a606c5f1b6ab")
+	)
+	(hierarchical_label "o{slash}p1"
+		(shape output)
+		(at 133.35 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e63aa0c7-360a-4359-84b3-2771a25797b8")
+	)
+	(symbol
+		(lib_id "power:+10V")
+		(at 209.55 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5308325a-1693-467b-82ca-05b0cfeb3f4d")
+		(property "Reference" "#PWR015"
+			(at 209.55 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+10V"
+			(at 209.55 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 209.55 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+10V\""
+			(at 209.55 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9d1666e3-e180-4141-be1b-700069cb715f")
+		)
+		(instances
+			(project "Billingshurst2.1sheet3"
+				(path "/5b0fd13b-e5ec-43f6-87cb-e6f655446a0a"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+			(project "Billingshurst 2.2"
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/3be750ae-bd62-458d-aa45-e8d8319abdd3"
+					(reference "#PWR015")
+					(unit 1)
+				)
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/a9296395-97e1-4ed7-9e45-8211c3011a03"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+10V")
+		(at 133.35 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "849a9c53-3e51-4668-ad8a-dae5dd727ac6")
+		(property "Reference" "#PWR02"
+			(at 133.35 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+10V"
+			(at 133.35 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+10V\""
+			(at 133.35 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "afee1478-4e66-43c8-95c3-f6f5e109fb88")
+		)
+		(instances
+			(project "Billingshurst2.1sheet3"
+				(path "/5b0fd13b-e5ec-43f6-87cb-e6f655446a0a"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+			(project "Billingshurst 2.2"
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/3be750ae-bd62-458d-aa45-e8d8319abdd3"
+					(reference "#PWR02")
+					(unit 1)
+				)
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/a9296395-97e1-4ed7-9e45-8211c3011a03"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+10V")
+		(at 209.55 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8cb8d288-e9a0-4a19-a53f-ff99a8379fad")
+		(property "Reference" "#PWR016"
+			(at 209.55 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+10V"
+			(at 209.55 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 209.55 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+10V\""
+			(at 209.55 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a2e312fe-da83-4aeb-b9eb-6b38f7339989")
+		)
+		(instances
+			(project "Billingshurst2.1sheet3"
+				(path "/5b0fd13b-e5ec-43f6-87cb-e6f655446a0a"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+			(project "Billingshurst 2.2"
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/3be750ae-bd62-458d-aa45-e8d8319abdd3"
+					(reference "#PWR016")
+					(unit 1)
+				)
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/a9296395-97e1-4ed7-9e45-8211c3011a03"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+10V")
+		(at 133.35 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9ff702d4-8dff-437d-8fb4-46681c0f0278")
+		(property "Reference" "#PWR012"
+			(at 133.35 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+10V"
+			(at 133.35 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+10V\""
+			(at 133.35 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "024ed4ed-8e13-45bb-aeff-90b4bb94fb8f")
+		)
+		(instances
+			(project "Billingshurst2.1sheet3"
+				(path "/5b0fd13b-e5ec-43f6-87cb-e6f655446a0a"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+			(project "Billingshurst 2.2"
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/3be750ae-bd62-458d-aa45-e8d8319abdd3"
+					(reference "#PWR012")
+					(unit 1)
+				)
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/a9296395-97e1-4ed7-9e45-8211c3011a03"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+10V")
+		(at 209.55 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e3b122f8-5f4c-44fe-bcaf-b6722eb9e9c8")
+		(property "Reference" "#PWR023"
+			(at 209.55 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+10V"
+			(at 209.55 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 209.55 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+10V\""
+			(at 209.55 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "566202ad-8fee-4893-aedc-5503b819c300")
+		)
+		(instances
+			(project "Billingshurst2.1sheet3"
+				(path "/5b0fd13b-e5ec-43f6-87cb-e6f655446a0a"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+			(project "Billingshurst 2.2"
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/3be750ae-bd62-458d-aa45-e8d8319abdd3"
+					(reference "#PWR023")
+					(unit 1)
+				)
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/a9296395-97e1-4ed7-9e45-8211c3011a03"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+10V")
+		(at 133.35 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e8dd92d9-cdb1-4edd-be92-192c5e428bbd")
+		(property "Reference" "#PWR014"
+			(at 133.35 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+10V"
+			(at 133.35 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+10V\""
+			(at 133.35 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "67c8f8b4-8ab6-4969-b8b0-35f7a1e93977")
+		)
+		(instances
+			(project "Billingshurst2.1sheet3"
+				(path "/5b0fd13b-e5ec-43f6-87cb-e6f655446a0a"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+			(project "Billingshurst 2.2"
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/3be750ae-bd62-458d-aa45-e8d8319abdd3"
+					(reference "#PWR014")
+					(unit 1)
+				)
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/a9296395-97e1-4ed7-9e45-8211c3011a03"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+10V")
+		(at 133.35 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f83b2dff-5b5e-42d3-b9ae-1b54e591cc50")
+		(property "Reference" "#PWR03"
+			(at 133.35 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+10V"
+			(at 133.35 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+10V\""
+			(at 133.35 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a89957bd-e4d0-495f-94ca-6bdaa345d4db")
+		)
+		(instances
+			(project "Billingshurst2.1sheet3"
+				(path "/5b0fd13b-e5ec-43f6-87cb-e6f655446a0a"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+			(project "Billingshurst 2.2"
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/3be750ae-bd62-458d-aa45-e8d8319abdd3"
+					(reference "#PWR03")
+					(unit 1)
+				)
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/a9296395-97e1-4ed7-9e45-8211c3011a03"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 158.75 31.75)
+		(size 44.45 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 255 153 0 1.0000)
+		)
+		(uuid "089b0046-8751-457f-8add-cf49bec9d95f")
+		(property "Sheetname" "relay module 5"
+			(at 158.75 31.0384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "../Common/relay_ch.kicad_sch"
+			(at 158.75 45.0346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Vin" input
+			(at 203.2 35.56 0)
+			(uuid "00dff2dd-c4f1-4603-855a-818ab3d19694")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "o{slash}p" output
+			(at 203.2 40.64 0)
+			(uuid "074c792a-d299-47f5-a2aa-9e5bafefbdc6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "i{slash}p" input
+			(at 158.75 38.1 180)
+			(uuid "05a4fdfe-1bd3-4e95-8b38-048df7fa7cb8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Billingshurst2sheet3"
+				(path "/5b0fd13b-e5ec-43f6-87cb-e6f655446a0a"
+					(page "6")
+				)
+			)
+			(project ""
+				(path "/3be750ae-bd62-458d-aa45-e8d8319abdd3"
+					(page "#")
+				)
+			)
+			(project "Billingshurst 2.2"
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/3be750ae-bd62-458d-aa45-e8d8319abdd3"
+					(page "14")
+				)
+			)
+			(project ""
+				(path "/a9296395-97e1-4ed7-9e45-8211c3011a03"
+					(page "#")
+				)
+			)
+			(project "Billingshurst 2.2"
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/a9296395-97e1-4ed7-9e45-8211c3011a03"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 82.55 31.75)
+		(size 44.45 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 255 153 0 1.0000)
+		)
+		(uuid "4b40ff4f-6a7f-44f6-8dd6-2aa6202297da")
+		(property "Sheetname" "relay module 1"
+			(at 82.55 31.0384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "../Common/relay_ch.kicad_sch"
+			(at 82.55 45.0346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Vin" input
+			(at 127 35.56 0)
+			(uuid "eae50a4d-8a39-46f5-8d26-8cd8301d03c2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "o{slash}p" output
+			(at 127 40.64 0)
+			(uuid "07bfea24-a04a-4d8a-89a2-c38476ca9a21")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "i{slash}p" input
+			(at 82.55 38.1 180)
+			(uuid "cd6c6ed8-f49b-4270-88f4-295667933f00")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Billingshurst2sheet3"
+				(path "/5b0fd13b-e5ec-43f6-87cb-e6f655446a0a"
+					(page "2")
+				)
+			)
+			(project ""
+				(path "/3be750ae-bd62-458d-aa45-e8d8319abdd3"
+					(page "#")
+				)
+			)
+			(project "Billingshurst 2.2"
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/3be750ae-bd62-458d-aa45-e8d8319abdd3"
+					(page "3")
+				)
+			)
+			(project ""
+				(path "/a9296395-97e1-4ed7-9e45-8211c3011a03"
+					(page "#")
+				)
+			)
+			(project "Billingshurst 2.2"
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/a9296395-97e1-4ed7-9e45-8211c3011a03"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 158.75 69.85)
+		(size 44.45 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 255 153 0 1.0000)
+		)
+		(uuid "53bf0628-1606-469d-adf9-e0fd916a6e4a")
+		(property "Sheetname" "relay module 7"
+			(at 158.75 69.1384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "../Common/relay_ch.kicad_sch"
+			(at 158.75 83.1346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Vin" input
+			(at 203.2 73.66 0)
+			(uuid "d7c02b89-a92e-4073-b6f5-0faae1cce5e0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "o{slash}p" output
+			(at 203.2 78.74 0)
+			(uuid "57e892d8-309d-4df2-8441-bdfb0cfade30")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "i{slash}p" input
+			(at 158.75 76.2 180)
+			(uuid "8a66da08-249e-453f-b0a5-ba7947146507")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Billingshurst2sheet3"
+				(path "/5b0fd13b-e5ec-43f6-87cb-e6f655446a0a"
+					(page "8")
+				)
+			)
+			(project ""
+				(path "/3be750ae-bd62-458d-aa45-e8d8319abdd3"
+					(page "#")
+				)
+			)
+			(project "Billingshurst 2.2"
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/3be750ae-bd62-458d-aa45-e8d8319abdd3"
+					(page "16")
+				)
+			)
+			(project ""
+				(path "/a9296395-97e1-4ed7-9e45-8211c3011a03"
+					(page "#")
+				)
+			)
+			(project "Billingshurst 2.2"
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/a9296395-97e1-4ed7-9e45-8211c3011a03"
+					(page "18")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 82.55 88.9)
+		(size 44.45 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 255 153 0 1.0000)
+		)
+		(uuid "6a262066-bb65-4cd3-a4d9-cf5a12fd773a")
+		(property "Sheetname" "relay module 4"
+			(at 82.55 88.1884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "../Common/relay_ch.kicad_sch"
+			(at 82.55 102.1846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Vin" input
+			(at 127 92.71 0)
+			(uuid "ea50981b-1850-458e-9c77-74d9d6d1746c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "o{slash}p" output
+			(at 127 97.79 0)
+			(uuid "2681b067-9578-4272-b1b2-ed1ff06d939a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "i{slash}p" input
+			(at 82.55 95.25 180)
+			(uuid "208f429a-51f5-459a-b1bc-2a13aca486fe")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Billingshurst2sheet3"
+				(path "/5b0fd13b-e5ec-43f6-87cb-e6f655446a0a"
+					(page "5")
+				)
+			)
+			(project ""
+				(path "/3be750ae-bd62-458d-aa45-e8d8319abdd3"
+					(page "#")
+				)
+			)
+			(project "Billingshurst 2.2"
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/3be750ae-bd62-458d-aa45-e8d8319abdd3"
+					(page "13")
+				)
+			)
+			(project ""
+				(path "/a9296395-97e1-4ed7-9e45-8211c3011a03"
+					(page "#")
+				)
+			)
+			(project "Billingshurst 2.2"
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/a9296395-97e1-4ed7-9e45-8211c3011a03"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 82.55 69.85)
+		(size 44.45 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 255 153 0 1.0000)
+		)
+		(uuid "6a3cbc12-6057-4be2-9f2b-64a0b35a775b")
+		(property "Sheetname" "relay module 3"
+			(at 82.55 69.1384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "../Common/relay_ch.kicad_sch"
+			(at 82.55 83.1346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Vin" input
+			(at 127 73.66 0)
+			(uuid "125f3fec-c5cb-4337-874e-a80814373481")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "o{slash}p" output
+			(at 127 78.74 0)
+			(uuid "0df39209-d195-4777-9964-159d60ec0bd0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "i{slash}p" input
+			(at 82.55 76.2 180)
+			(uuid "8ac6c76b-107e-4ea0-8bd2-93080362533e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Billingshurst2sheet3"
+				(path "/5b0fd13b-e5ec-43f6-87cb-e6f655446a0a"
+					(page "4")
+				)
+			)
+			(project ""
+				(path "/3be750ae-bd62-458d-aa45-e8d8319abdd3"
+					(page "#")
+				)
+			)
+			(project "Billingshurst 2.2"
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/3be750ae-bd62-458d-aa45-e8d8319abdd3"
+					(page "12")
+				)
+			)
+			(project ""
+				(path "/a9296395-97e1-4ed7-9e45-8211c3011a03"
+					(page "#")
+				)
+			)
+			(project "Billingshurst 2.2"
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/a9296395-97e1-4ed7-9e45-8211c3011a03"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 158.75 50.8)
+		(size 44.45 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 255 153 0 1.0000)
+		)
+		(uuid "ad835064-3e85-4ed0-bc52-caf48f5ce43c")
+		(property "Sheetname" "relay module 6"
+			(at 158.75 50.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "../Common/relay_ch.kicad_sch"
+			(at 158.75 64.0846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Vin" input
+			(at 203.2 54.61 0)
+			(uuid "31bf4c7f-d203-4569-b7d0-1ea0d351543c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "o{slash}p" output
+			(at 203.2 59.69 0)
+			(uuid "40692a0e-0627-4620-a523-c8f74ccfaf0f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "i{slash}p" input
+			(at 158.75 57.15 180)
+			(uuid "a033ed14-ea2e-442d-9a02-c34eafa635df")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Billingshurst2sheet3"
+				(path "/5b0fd13b-e5ec-43f6-87cb-e6f655446a0a"
+					(page "7")
+				)
+			)
+			(project ""
+				(path "/3be750ae-bd62-458d-aa45-e8d8319abdd3"
+					(page "#")
+				)
+			)
+			(project "Billingshurst 2.2"
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/3be750ae-bd62-458d-aa45-e8d8319abdd3"
+					(page "15")
+				)
+			)
+			(project ""
+				(path "/a9296395-97e1-4ed7-9e45-8211c3011a03"
+					(page "#")
+				)
+			)
+			(project "Billingshurst 2.2"
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/a9296395-97e1-4ed7-9e45-8211c3011a03"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 158.75 88.9)
+		(size 44.45 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 255 153 0 1.0000)
+		)
+		(uuid "d3dcb5ff-5f5f-49d4-9e28-4eea4bf03afa")
+		(property "Sheetname" "relay module 8"
+			(at 158.75 88.1884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "../Common/relay_ch.kicad_sch"
+			(at 158.75 102.1846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Vin" input
+			(at 203.2 92.71 0)
+			(uuid "e5724bcc-57f4-44be-a41e-c7f45c290b7f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "o{slash}p" output
+			(at 203.2 97.79 0)
+			(uuid "710c3b50-c426-4049-b0ed-9b502fcbe974")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "i{slash}p" input
+			(at 158.75 95.25 180)
+			(uuid "25f53192-7ff7-4717-b3a6-cd90ce04e52d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Billingshurst2sheet3"
+				(path "/5b0fd13b-e5ec-43f6-87cb-e6f655446a0a"
+					(page "9")
+				)
+			)
+			(project ""
+				(path "/3be750ae-bd62-458d-aa45-e8d8319abdd3"
+					(page "#")
+				)
+			)
+			(project "Billingshurst 2.2"
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/3be750ae-bd62-458d-aa45-e8d8319abdd3"
+					(page "17")
+				)
+			)
+			(project ""
+				(path "/a9296395-97e1-4ed7-9e45-8211c3011a03"
+					(page "#")
+				)
+			)
+			(project "Billingshurst 2.2"
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/a9296395-97e1-4ed7-9e45-8211c3011a03"
+					(page "19")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 82.55 50.8)
+		(size 44.45 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 255 153 0 1.0000)
+		)
+		(uuid "e36399e9-558d-4c21-85dc-7466d667e81a")
+		(property "Sheetname" "relay module 2"
+			(at 82.55 50.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "../Common/relay_ch.kicad_sch"
+			(at 82.55 64.0846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Vin" input
+			(at 127 54.61 0)
+			(uuid "71c1af6c-2a7a-48ed-af12-c2078701fc04")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "o{slash}p" output
+			(at 127 59.69 0)
+			(uuid "fd912e35-a993-46a5-8e21-1196aa9b580e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "i{slash}p" input
+			(at 82.55 57.15 180)
+			(uuid "17c165d7-936b-4dde-8ed8-b6bbb40b1ffd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Billingshurst2sheet3"
+				(path "/5b0fd13b-e5ec-43f6-87cb-e6f655446a0a"
+					(page "3")
+				)
+			)
+			(project ""
+				(path "/3be750ae-bd62-458d-aa45-e8d8319abdd3"
+					(page "#")
+				)
+			)
+			(project "Billingshurst 2.2"
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/3be750ae-bd62-458d-aa45-e8d8319abdd3"
+					(page "4")
+				)
+			)
+			(project ""
+				(path "/a9296395-97e1-4ed7-9e45-8211c3011a03"
+					(page "#")
+				)
+			)
+			(project "Billingshurst 2.2"
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/a9296395-97e1-4ed7-9e45-8211c3011a03"
+					(page "7")
+				)
+			)
+		)
+	)
+)
