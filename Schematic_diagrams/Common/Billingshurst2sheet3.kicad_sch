@@ -5,10 +5,10 @@
 	(uuid "5b0fd13b-e5ec-43f6-87cb-e6f655446a0a")
 	(paper "A4")
 	(title_block
-		(title "8-Channel Relay Module")
-		(date "2026-02-09")
-		(rev "A")
-		(company "Amberley Museum - Billingshurst Signal Box")
+		(title "Track Diagram Lamp Controller")
+		(date "07/02/2026")
+		(rev "B")
+		(company "Amerley Museum - Billingshurst Signalbox")
 	)
 	(lib_symbols
 		(symbol "power:+10V"
@@ -1172,7 +1172,7 @@
 					(page "#")
 				)
 			)
-			(project "Billingshurst 2.2"
+			(project "BT_controller"
 				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/3be750ae-bd62-458d-aa45-e8d8319abdd3"
 					(page "14")
 				)
@@ -1182,7 +1182,7 @@
 					(page "#")
 				)
 			)
-			(project "Billingshurst 2.2"
+			(project "BT_controller"
 				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/a9296395-97e1-4ed7-9e45-8211c3011a03"
 					(page "10")
 				)
@@ -1265,7 +1265,7 @@
 					(page "#")
 				)
 			)
-			(project "Billingshurst 2.2"
+			(project "BT_controller"
 				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/3be750ae-bd62-458d-aa45-e8d8319abdd3"
 					(page "3")
 				)
@@ -1275,7 +1275,7 @@
 					(page "#")
 				)
 			)
-			(project "Billingshurst 2.2"
+			(project "BT_controller"
 				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/a9296395-97e1-4ed7-9e45-8211c3011a03"
 					(page "6")
 				)
@@ -1358,7 +1358,7 @@
 					(page "#")
 				)
 			)
-			(project "Billingshurst 2.2"
+			(project "BT_controller"
 				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/3be750ae-bd62-458d-aa45-e8d8319abdd3"
 					(page "16")
 				)
@@ -1368,7 +1368,7 @@
 					(page "#")
 				)
 			)
-			(project "Billingshurst 2.2"
+			(project "BT_controller"
 				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/a9296395-97e1-4ed7-9e45-8211c3011a03"
 					(page "18")
 				)
@@ -1451,7 +1451,7 @@
 					(page "#")
 				)
 			)
-			(project "Billingshurst 2.2"
+			(project "BT_controller"
 				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/3be750ae-bd62-458d-aa45-e8d8319abdd3"
 					(page "13")
 				)
@@ -1461,7 +1461,7 @@
 					(page "#")
 				)
 			)
-			(project "Billingshurst 2.2"
+			(project "BT_controller"
 				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/a9296395-97e1-4ed7-9e45-8211c3011a03"
 					(page "9")
 				)
@@ -1544,7 +1544,7 @@
 					(page "#")
 				)
 			)
-			(project "Billingshurst 2.2"
+			(project "BT_controller"
 				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/3be750ae-bd62-458d-aa45-e8d8319abdd3"
 					(page "12")
 				)
@@ -1554,7 +1554,7 @@
 					(page "#")
 				)
 			)
-			(project "Billingshurst 2.2"
+			(project "BT_controller"
 				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/a9296395-97e1-4ed7-9e45-8211c3011a03"
 					(page "8")
 				)
@@ -1637,7 +1637,7 @@
 					(page "#")
 				)
 			)
-			(project "Billingshurst 2.2"
+			(project "BT_controller"
 				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/3be750ae-bd62-458d-aa45-e8d8319abdd3"
 					(page "15")
 				)
@@ -1647,7 +1647,7 @@
 					(page "#")
 				)
 			)
-			(project "Billingshurst 2.2"
+			(project "BT_controller"
 				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/a9296395-97e1-4ed7-9e45-8211c3011a03"
 					(page "11")
 				)
@@ -1730,7 +1730,7 @@
 					(page "#")
 				)
 			)
-			(project "Billingshurst 2.2"
+			(project "BT_controller"
 				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/3be750ae-bd62-458d-aa45-e8d8319abdd3"
 					(page "17")
 				)
@@ -1740,7 +1740,7 @@
 					(page "#")
 				)
 			)
-			(project "Billingshurst 2.2"
+			(project "BT_controller"
 				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/a9296395-97e1-4ed7-9e45-8211c3011a03"
 					(page "19")
 				)
@@ -1823,7 +1823,7 @@
 					(page "#")
 				)
 			)
-			(project "Billingshurst 2.2"
+			(project "BT_controller"
 				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/3be750ae-bd62-458d-aa45-e8d8319abdd3"
 					(page "4")
 				)
@@ -1833,7 +1833,7 @@
 					(page "#")
 				)
 			)
-			(project "Billingshurst 2.2"
+			(project "BT_controller"
 				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e/a9296395-97e1-4ed7-9e45-8211c3011a03"
 					(page "7")
 				)

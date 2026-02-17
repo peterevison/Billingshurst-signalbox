@@ -408,6 +408,87 @@
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "5f14c763-48ee-4edd-bd2c-b1ef0de7486e",
+      "Root"
+    ],
+    [
+      "5c7d67f7-99ca-44cf-a3a9-622e865e1472",
+      "Optocoupler Module"
+    ],
+    [
+      "3be750ae-bd62-458d-aa45-e8d8319abdd3",
+      "8_Channel Relay Module #2"
+    ],
+    [
+      "4b40ff4f-6a7f-44f6-8dd6-2aa6202297da",
+      "relay module 1"
+    ],
+    [
+      "e36399e9-558d-4c21-85dc-7466d667e81a",
+      "relay module 2"
+    ],
+    [
+      "a9296395-97e1-4ed7-9e45-8211c3011a03",
+      "8-Channel Relay Module #1"
+    ],
+    [
+      "4b40ff4f-6a7f-44f6-8dd6-2aa6202297da",
+      "relay module 1"
+    ],
+    [
+      "e36399e9-558d-4c21-85dc-7466d667e81a",
+      "relay module 2"
+    ],
+    [
+      "6a3cbc12-6057-4be2-9f2b-64a0b35a775b",
+      "relay module 3"
+    ],
+    [
+      "6a262066-bb65-4cd3-a4d9-cf5a12fd773a",
+      "relay module 4"
+    ],
+    [
+      "089b0046-8751-457f-8add-cf49bec9d95f",
+      "relay module 5"
+    ],
+    [
+      "ad835064-3e85-4ed0-bc52-caf48f5ce43c",
+      "relay module 6"
+    ],
+    [
+      "6a3cbc12-6057-4be2-9f2b-64a0b35a775b",
+      "relay module 3"
+    ],
+    [
+      "6a262066-bb65-4cd3-a4d9-cf5a12fd773a",
+      "relay module 4"
+    ],
+    [
+      "089b0046-8751-457f-8add-cf49bec9d95f",
+      "relay module 5"
+    ],
+    [
+      "ad835064-3e85-4ed0-bc52-caf48f5ce43c",
+      "relay module 6"
+    ],
+    [
+      "53bf0628-1606-469d-adf9-e0fd916a6e4a",
+      "relay module 7"
+    ],
+    [
+      "d3dcb5ff-5f5f-49d4-9e28-4eea4bf03afa",
+      "relay module 8"
+    ],
+    [
+      "53bf0628-1606-469d-adf9-e0fd916a6e4a",
+      "relay module 7"
+    ],
+    [
+      "d3dcb5ff-5f5f-49d4-9e28-4eea4bf03afa",
+      "relay module 8"
+    ]
+  ],
   "text_variables": {}
 }

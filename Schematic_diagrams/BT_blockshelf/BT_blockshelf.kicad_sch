@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "BLOCK INSTRUMENT DIAGRAM")
-		(date "21/10/2025")
-		(rev "A")
+		(date "17/02/2026")
+		(rev "B")
 		(company "Amberley Museum - Billingshurst Signalbox")
 	)
 	(lib_symbols
@@ -262,6 +262,168 @@
 					(at 0 -3.81 90)
 					(length 2.794)
 					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:D_TVS_Small_Filled"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_TVS_Small_Filled"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Bidirectional transient-voltage-suppression diode, small symbol, filled shape"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode TVS thyrector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_TVS_Small_Filled_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 1.016) (xy 0 1.016) (xy 0 -1.016) (xy -0.508 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_TVS_Small_Filled_1_1"
+				(polyline
+					(pts
+						(xy -1.27 1.016) (xy -1.27 -1.016) (xy 0 0) (xy -1.27 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 1.27 1.016) (xy 1.27 -1.016) (xy 0 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.27)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.27)
+					(name "A2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1370,7 +1532,7 @@
 		(uuid 3083d55d-355c-48a2-8535-718a8535df68)
 	)
 	(circle
-		(center 85.09 186.69)
+		(center 85.09 182.88)
 		(radius 4.5791)
 		(stroke
 			(width 0)
@@ -1480,7 +1642,7 @@
 	)
 	(text "T14L"
 		(exclude_from_sim no)
-		(at 49.276 185.928 0)
+		(at 49.276 182.118 0)
 		(effects
 			(font
 				(size 1 1)
@@ -1557,7 +1719,7 @@
 	)
 	(text "Block Shelf - Rear Terminal Strip"
 		(exclude_from_sim no)
-		(at 147.32 124.968 0)
+		(at 144.69 124.968 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1775,7 +1937,7 @@
 	)
 	(text "C/8"
 		(exclude_from_sim no)
-		(at 40.894 185.928 0)
+		(at 40.894 182.118 0)
 		(effects
 			(font
 				(size 1 1)
@@ -1786,7 +1948,7 @@
 	)
 	(text "PH Control Box - Internal Terminal Strip\n\n"
 		(exclude_from_sim no)
-		(at 200.66 125.73 0)
+		(at 195.49 125.73 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2068,7 +2230,7 @@
 	)
 	(text "BT Bell"
 		(exclude_from_sim no)
-		(at 84.836 180.34 0)
+		(at 77.47 179.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2238,7 +2400,7 @@
 	)
 	(text "BLX1"
 		(exclude_from_sim no)
-		(at 75.0585 185.7461 0)
+		(at 75.0585 181.9361 0)
 		(effects
 			(font
 				(size 1 1)
@@ -2412,7 +2574,7 @@
 	)
 	(text "T13L"
 		(exclude_from_sim no)
-		(at 103.632 185.674 0)
+		(at 103.632 181.864 0)
 		(effects
 			(font
 				(size 1 1)
@@ -2466,7 +2628,7 @@
 	)
 	(text "BLX2"
 		(exclude_from_sim no)
-		(at 94.9225 185.8496 0)
+		(at 94.9225 182.0396 0)
 		(effects
 			(font
 				(size 1 1)
@@ -2596,10 +2758,10 @@
 		)
 		(uuid "1160906f-1234-49b0-ac3d-fcd337e8d76c")
 	)
-	(text_box "Notes\n1. Terminal numbers (in green) refer to right hand \n   terminal strip on back of blockshelf, shown on \n   drawing Blockshelf Terminations (1), left column\n2. 6V and 10V supply do not share a common 0V\n3. 10V supply derived from 12V using a series resistor"
+	(text_box "Notes\n1. Terminal numbers (in green) refer to right hand \n   terminal strip on back of blockshelf, shown on \n   drawing Blockshelf Terminations (1), left column\n2. 6V and 10V supply do not share a common 0V\n3. 10V supply derived from 12V using a series resistor\n4. To revert to original wiring, remove all new wiring\n	and 1000ohm resistor, and replace links: terminals 2,3\n	and terminals 1,4 on rear blockshelf terminal block\n	(C cable, black terminals, shown on drawing Blockshelf\n	Terminations (1))"
 		(exclude_from_sim no)
-		(at 226.06 128.27 0)
-		(size 57.15 24.13)
+		(at 220.98 128.27 0)
+		(size 62.23 24.13)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -2744,7 +2906,7 @@
 		(uuid "ff9b15ec-6240-4efd-89e2-fd7c5f2967ee")
 	)
 	(junction
-		(at 107.95 186.69)
+		(at 107.95 182.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "079980c2-6aa5-43bc-8178-7966982601b7")
@@ -2780,7 +2942,7 @@
 		(uuid "2deffccb-7ec6-4a20-8a38-e2d3343f919a")
 	)
 	(junction
-		(at 92.71 186.69)
+		(at 92.71 182.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3512b6c2-327c-4b5c-a250-ec0750cc5647")
@@ -2882,7 +3044,7 @@
 		(uuid "8858af0f-6e70-4c6a-8d2e-93cb74e8ae17")
 	)
 	(junction
-		(at 44.45 186.69)
+		(at 44.45 182.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "90d9dd35-6a2f-4aac-81cc-1ae153e2cf7c")
@@ -2906,7 +3068,7 @@
 		(uuid "9a863d6c-46aa-4571-b51f-6acbd476c7d1")
 	)
 	(junction
-		(at 77.47 186.69)
+		(at 77.47 182.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a0f87543-fbcb-43fc-af6e-6de8f156e65a")
@@ -2916,6 +3078,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a3587551-06e4-4b3a-abd8-4f64c2fa4925")
+	)
+	(junction
+		(at 92.71 189.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a91950e6-736b-4d6b-9d50-11e53acfa534")
 	)
 	(junction
 		(at 176.53 106.68)
@@ -2930,10 +3098,16 @@
 		(uuid "c2513b00-e3a7-4211-9bd3-1f53cfc20f94")
 	)
 	(junction
-		(at 58.42 186.69)
+		(at 58.42 182.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c4bd0d93-23fb-47f8-b8ee-cc6219daa04c")
+	)
+	(junction
+		(at 77.47 189.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cce9c1eb-c40a-4fb0-98ce-a9b96612f452")
 	)
 	(junction
 		(at 53.34 173.99)
@@ -2999,7 +3173,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 186.69) (xy 92.71 186.69)
+			(xy 88.9 182.88) (xy 92.71 182.88)
 		)
 		(stroke
 			(width 0)
@@ -3251,6 +3425,16 @@
 	)
 	(wire
 		(pts
+			(xy 77.47 189.23) (xy 77.47 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34af6098-f7e1-41e9-81c4-2843b5685ae4")
+	)
+	(wire
+		(pts
 			(xy 43.18 118.11) (xy 73.66 118.11)
 		)
 		(stroke
@@ -3293,7 +3477,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 186.69) (xy 81.28 186.69)
+			(xy 77.47 182.88) (xy 81.28 182.88)
 		)
 		(stroke
 			(width 0)
@@ -3668,7 +3852,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 194.31) (xy 77.47 194.31)
+			(xy 81.28 193.04) (xy 77.47 193.04)
 		)
 		(stroke
 			(width 0)
@@ -3688,7 +3872,17 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 130.81) (xy 115.57 186.69)
+			(xy 77.47 189.23) (xy 82.55 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93de6e58-1deb-461b-9ba7-ec96b3a61b55")
+	)
+	(wire
+		(pts
+			(xy 115.57 130.81) (xy 115.57 182.88)
 		)
 		(stroke
 			(width 0)
@@ -3698,7 +3892,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 186.69) (xy 58.42 186.69)
+			(xy 44.45 182.88) (xy 58.42 182.88)
 		)
 		(stroke
 			(width 0)
@@ -3821,7 +4015,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 186.69) (xy 77.47 194.31)
+			(xy 77.47 182.88) (xy 77.47 189.23)
 		)
 		(stroke
 			(width 0)
@@ -3831,7 +4025,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 186.69) (xy 92.71 194.31)
+			(xy 92.71 182.88) (xy 92.71 189.23)
 		)
 		(stroke
 			(width 0)
@@ -3872,7 +4066,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 186.69) (xy 107.95 186.69)
+			(xy 92.71 182.88) (xy 107.95 182.88)
 		)
 		(stroke
 			(width 0)
@@ -3901,6 +4095,16 @@
 		)
 		(uuid "c8ceabd0-c6eb-487d-8087-178b79fe2b5b")
 	)
+	(wire
+		(pts
+			(xy 92.71 189.23) (xy 92.71 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9a14c8b-8499-4e35-9262-33add629e5cd")
+	)
 	(polyline
 		(pts
 			(xy 52.07 114.046) (xy 46.99 115.316)
@@ -3911,6 +4115,16 @@
 			(color 0 132 0 1)
 		)
 		(uuid "ceb3f055-4758-49ec-abc1-cbdbf7daba17")
+	)
+	(wire
+		(pts
+			(xy 87.63 189.23) (xy 92.71 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf07619b-0383-4193-be7f-db15bde1896b")
 	)
 	(wire
 		(pts
@@ -3944,7 +4158,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 186.69) (xy 77.47 186.69)
+			(xy 58.42 182.88) (xy 77.47 182.88)
 		)
 		(stroke
 			(width 0)
@@ -3954,7 +4168,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 186.69) (xy 115.57 186.69)
+			(xy 107.95 182.88) (xy 115.57 182.88)
 		)
 		(stroke
 			(width 0)
@@ -4024,7 +4238,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 194.31) (xy 92.71 194.31)
+			(xy 88.9 193.04) (xy 92.71 193.04)
 		)
 		(stroke
 			(width 0)
@@ -4034,7 +4248,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 186.69) (xy 44.45 186.69)
+			(xy 36.83 182.88) (xy 44.45 182.88)
 		)
 		(stroke
 			(width 0)
@@ -4094,7 +4308,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 140.97) (xy 58.42 186.69)
+			(xy 58.42 140.97) (xy 58.42 182.88)
 		)
 		(stroke
 			(width 0)
@@ -4178,7 +4392,7 @@
 		(cells
 			(table_cell "Terminal"
 				(exclude_from_sim no)
-				(at 124.46 128.27 0)
+				(at 121.83 128.27 0)
 				(size 12 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4194,7 +4408,7 @@
 			)
 			(table_cell "Conn.LHS"
 				(exclude_from_sim no)
-				(at 136.46 128.27 0)
+				(at 133.83 128.27 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4210,7 +4424,7 @@
 			)
 			(table_cell "Conn.RHS"
 				(exclude_from_sim no)
-				(at 154.46 128.27 0)
+				(at 151.83 128.27 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4226,7 +4440,7 @@
 			)
 			(table_cell ""
 				(exclude_from_sim no)
-				(at 124.46 130.81 0)
+				(at 121.83 130.81 0)
 				(size 12 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4243,7 +4457,7 @@
 			)
 			(table_cell ""
 				(exclude_from_sim no)
-				(at 136.46 130.81 0)
+				(at 133.83 130.81 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4260,7 +4474,7 @@
 			)
 			(table_cell ""
 				(exclude_from_sim no)
-				(at 154.46 130.81 0)
+				(at 151.83 130.81 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4277,7 +4491,7 @@
 			)
 			(table_cell "1"
 				(exclude_from_sim no)
-				(at 124.46 133.35 0)
+				(at 121.83 133.35 0)
 				(size 12 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4294,7 +4508,7 @@
 			)
 			(table_cell "T1L + orange"
 				(exclude_from_sim no)
-				(at 136.46 133.35 0)
+				(at 133.83 133.35 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4311,7 +4525,7 @@
 			)
 			(table_cell ""
 				(exclude_from_sim no)
-				(at 154.46 133.35 0)
+				(at 151.83 133.35 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4328,7 +4542,7 @@
 			)
 			(table_cell "2"
 				(exclude_from_sim no)
-				(at 124.46 135.89 0)
+				(at 121.83 135.89 0)
 				(size 12 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4345,7 +4559,7 @@
 			)
 			(table_cell "T2L + yellow"
 				(exclude_from_sim no)
-				(at 136.46 135.89 0)
+				(at 133.83 135.89 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4362,7 +4576,7 @@
 			)
 			(table_cell ""
 				(exclude_from_sim no)
-				(at 154.46 135.89 0)
+				(at 151.83 135.89 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4379,7 +4593,7 @@
 			)
 			(table_cell "3"
 				(exclude_from_sim no)
-				(at 124.46 138.43 0)
+				(at 121.83 138.43 0)
 				(size 12 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4396,7 +4610,7 @@
 			)
 			(table_cell "T3L"
 				(exclude_from_sim no)
-				(at 136.46 138.43 0)
+				(at 133.83 138.43 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4413,7 +4627,7 @@
 			)
 			(table_cell "1k resistor top"
 				(exclude_from_sim no)
-				(at 154.46 138.43 0)
+				(at 151.83 138.43 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4430,7 +4644,7 @@
 			)
 			(table_cell "4"
 				(exclude_from_sim no)
-				(at 124.46 140.97 0)
+				(at 121.83 140.97 0)
 				(size 12 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4447,7 +4661,7 @@
 			)
 			(table_cell "T4L"
 				(exclude_from_sim no)
-				(at 136.46 140.97 0)
+				(at 133.83 140.97 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4464,7 +4678,7 @@
 			)
 			(table_cell "1k resistor btm"
 				(exclude_from_sim no)
-				(at 154.46 140.97 0)
+				(at 151.83 140.97 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4481,7 +4695,7 @@
 			)
 			(table_cell "5"
 				(exclude_from_sim no)
-				(at 124.46 143.51 0)
+				(at 121.83 143.51 0)
 				(size 12 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4498,7 +4712,7 @@
 			)
 			(table_cell "T5L + blue"
 				(exclude_from_sim no)
-				(at 136.46 143.51 0)
+				(at 133.83 143.51 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4515,7 +4729,7 @@
 			)
 			(table_cell "C/1"
 				(exclude_from_sim no)
-				(at 154.46 143.51 0)
+				(at 151.83 143.51 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4532,7 +4746,7 @@
 			)
 			(table_cell "6"
 				(exclude_from_sim no)
-				(at 124.46 146.05 0)
+				(at 121.83 146.05 0)
 				(size 12 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4549,7 +4763,7 @@
 			)
 			(table_cell "T6L + d.green"
 				(exclude_from_sim no)
-				(at 136.46 146.05 0)
+				(at 133.83 146.05 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4566,7 +4780,7 @@
 			)
 			(table_cell "C/2"
 				(exclude_from_sim no)
-				(at 154.46 146.05 0)
+				(at 151.83 146.05 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4583,7 +4797,7 @@
 			)
 			(table_cell "7"
 				(exclude_from_sim no)
-				(at 124.46 148.59 0)
+				(at 121.83 148.59 0)
 				(size 12 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4600,7 +4814,7 @@
 			)
 			(table_cell "unmarked"
 				(exclude_from_sim no)
-				(at 136.46 148.59 0)
+				(at 133.83 148.59 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4617,7 +4831,7 @@
 			)
 			(table_cell "C/3"
 				(exclude_from_sim no)
-				(at 154.46 148.59 0)
+				(at 151.83 148.59 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4634,7 +4848,7 @@
 			)
 			(table_cell "8"
 				(exclude_from_sim no)
-				(at 124.46 151.13 0)
+				(at 121.83 151.13 0)
 				(size 12 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4651,7 +4865,7 @@
 			)
 			(table_cell "unmarked"
 				(exclude_from_sim no)
-				(at 136.46 151.13 0)
+				(at 133.83 151.13 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4668,7 +4882,7 @@
 			)
 			(table_cell "C/4"
 				(exclude_from_sim no)
-				(at 154.46 151.13 0)
+				(at 151.83 151.13 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4685,7 +4899,7 @@
 			)
 			(table_cell "9"
 				(exclude_from_sim no)
-				(at 124.46 153.67 0)
+				(at 121.83 153.67 0)
 				(size 12 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4702,7 +4916,7 @@
 			)
 			(table_cell "unmarked"
 				(exclude_from_sim no)
-				(at 136.46 153.67 0)
+				(at 133.83 153.67 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4719,7 +4933,7 @@
 			)
 			(table_cell "C/5"
 				(exclude_from_sim no)
-				(at 154.46 153.67 0)
+				(at 151.83 153.67 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4736,7 +4950,7 @@
 			)
 			(table_cell "10"
 				(exclude_from_sim no)
-				(at 124.46 156.21 0)
+				(at 121.83 156.21 0)
 				(size 12 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4753,7 +4967,7 @@
 			)
 			(table_cell "spare"
 				(exclude_from_sim no)
-				(at 136.46 156.21 0)
+				(at 133.83 156.21 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4770,7 +4984,7 @@
 			)
 			(table_cell "C/6"
 				(exclude_from_sim no)
-				(at 154.46 156.21 0)
+				(at 151.83 156.21 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4787,7 +5001,7 @@
 			)
 			(table_cell "11"
 				(exclude_from_sim no)
-				(at 124.46 158.75 0)
+				(at 121.83 158.75 0)
 				(size 12 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4804,7 +5018,7 @@
 			)
 			(table_cell "T11L + brown"
 				(exclude_from_sim no)
-				(at 136.46 158.75 0)
+				(at 133.83 158.75 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4821,7 +5035,7 @@
 			)
 			(table_cell "C/7"
 				(exclude_from_sim no)
-				(at 154.46 158.75 0)
+				(at 151.83 158.75 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4838,7 +5052,7 @@
 			)
 			(table_cell "12"
 				(exclude_from_sim no)
-				(at 124.46 161.29 0)
+				(at 121.83 161.29 0)
 				(size 12 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4855,7 +5069,7 @@
 			)
 			(table_cell "T12L + white"
 				(exclude_from_sim no)
-				(at 136.46 161.29 0)
+				(at 133.83 161.29 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4872,7 +5086,7 @@
 			)
 			(table_cell ""
 				(exclude_from_sim no)
-				(at 154.46 161.29 0)
+				(at 151.83 161.29 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4889,7 +5103,7 @@
 			)
 			(table_cell "13"
 				(exclude_from_sim no)
-				(at 124.46 163.83 0)
+				(at 121.83 163.83 0)
 				(size 12 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4906,7 +5120,7 @@
 			)
 			(table_cell "T13L + red"
 				(exclude_from_sim no)
-				(at 136.46 163.83 0)
+				(at 133.83 163.83 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4923,7 +5137,7 @@
 			)
 			(table_cell ""
 				(exclude_from_sim no)
-				(at 154.46 163.83 0)
+				(at 151.83 163.83 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4940,7 +5154,7 @@
 			)
 			(table_cell "14"
 				(exclude_from_sim no)
-				(at 124.46 166.37 0)
+				(at 121.83 166.37 0)
 				(size 12 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4957,7 +5171,7 @@
 			)
 			(table_cell "T14L + black"
 				(exclude_from_sim no)
-				(at 136.46 166.37 0)
+				(at 133.83 166.37 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4974,7 +5188,7 @@
 			)
 			(table_cell "C/8"
 				(exclude_from_sim no)
-				(at 154.46 166.37 0)
+				(at 151.83 166.37 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4991,7 +5205,7 @@
 			)
 			(table_cell "rows 15-48"
 				(exclude_from_sim no)
-				(at 124.46 168.91 0)
+				(at 121.83 168.91 0)
 				(size 12 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5008,7 +5222,7 @@
 			)
 			(table_cell " - see Blockshelf Terminations (1) drawing"
 				(exclude_from_sim no)
-				(at 136.46 168.91 0)
+				(at 133.83 168.91 0)
 				(size 36 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 2 1)
@@ -5025,7 +5239,7 @@
 			)
 			(table_cell "rgb(240, 240, 240)"
 				(exclude_from_sim no)
-				(at 154.46 168.91 0)
+				(at 151.83 168.91 0)
 				(size 18 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 0 0)
@@ -5065,7 +5279,7 @@
 		(cells
 			(table_cell "Terminal"
 				(exclude_from_sim no)
-				(at 180.34 128.27 0)
+				(at 175.17 128.27 0)
 				(size 10 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5081,7 +5295,7 @@
 			)
 			(table_cell "Colour"
 				(exclude_from_sim no)
-				(at 190.34 128.27 0)
+				(at 185.17 128.27 0)
 				(size 12 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5097,7 +5311,7 @@
 			)
 			(table_cell "Description"
 				(exclude_from_sim no)
-				(at 202.34 128.27 0)
+				(at 197.17 128.27 0)
 				(size 20 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5113,7 +5327,7 @@
 			)
 			(table_cell ""
 				(exclude_from_sim no)
-				(at 180.34 130.81 0)
+				(at 175.17 130.81 0)
 				(size 10 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5129,7 +5343,7 @@
 			)
 			(table_cell "(multicore)"
 				(exclude_from_sim no)
-				(at 190.34 130.81 0)
+				(at 185.17 130.81 0)
 				(size 12 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5145,7 +5359,7 @@
 			)
 			(table_cell ""
 				(exclude_from_sim no)
-				(at 202.34 130.81 0)
+				(at 197.17 130.81 0)
 				(size 20 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5162,7 +5376,7 @@
 			)
 			(table_cell "1"
 				(exclude_from_sim no)
-				(at 180.34 133.35 0)
+				(at 175.17 133.35 0)
 				(size 10 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5178,7 +5392,7 @@
 			)
 			(table_cell "brown"
 				(exclude_from_sim no)
-				(at 190.34 133.35 0)
+				(at 185.17 133.35 0)
 				(size 12 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5194,7 +5408,7 @@
 			)
 			(table_cell "bell press"
 				(exclude_from_sim no)
-				(at 202.34 133.35 0)
+				(at 197.17 133.35 0)
 				(size 20 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5211,7 +5425,7 @@
 			)
 			(table_cell "2"
 				(exclude_from_sim no)
-				(at 180.34 135.89 0)
+				(at 175.17 135.89 0)
 				(size 10 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5227,7 +5441,7 @@
 			)
 			(table_cell "red"
 				(exclude_from_sim no)
-				(at 190.34 135.89 0)
+				(at 185.17 135.89 0)
 				(size 12 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5243,7 +5457,7 @@
 			)
 			(table_cell "bell press"
 				(exclude_from_sim no)
-				(at 202.34 135.89 0)
+				(at 197.17 135.89 0)
 				(size 20 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5260,7 +5474,7 @@
 			)
 			(table_cell "3"
 				(exclude_from_sim no)
-				(at 180.34 138.43 0)
+				(at 175.17 138.43 0)
 				(size 10 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5276,7 +5490,7 @@
 			)
 			(table_cell "orange"
 				(exclude_from_sim no)
-				(at 190.34 138.43 0)
+				(at 185.17 138.43 0)
 				(size 12 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5292,7 +5506,7 @@
 			)
 			(table_cell "block inst. switch"
 				(exclude_from_sim no)
-				(at 202.34 138.43 0)
+				(at 197.17 138.43 0)
 				(size 20 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5309,7 +5523,7 @@
 			)
 			(table_cell "4"
 				(exclude_from_sim no)
-				(at 180.34 140.97 0)
+				(at 175.17 140.97 0)
 				(size 10 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5325,7 +5539,7 @@
 			)
 			(table_cell "yellow"
 				(exclude_from_sim no)
-				(at 190.34 140.97 0)
+				(at 185.17 140.97 0)
 				(size 12 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5341,7 +5555,7 @@
 			)
 			(table_cell "block inst. switch"
 				(exclude_from_sim no)
-				(at 202.34 140.97 0)
+				(at 197.17 140.97 0)
 				(size 20 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5358,7 +5572,7 @@
 			)
 			(table_cell "5"
 				(exclude_from_sim no)
-				(at 180.34 143.51 0)
+				(at 175.17 143.51 0)
 				(size 10 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5374,7 +5588,7 @@
 			)
 			(table_cell "d.green"
 				(exclude_from_sim no)
-				(at 190.34 143.51 0)
+				(at 185.17 143.51 0)
 				(size 12 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5390,7 +5604,7 @@
 			)
 			(table_cell "block inst. switch"
 				(exclude_from_sim no)
-				(at 202.34 143.51 0)
+				(at 197.17 143.51 0)
 				(size 20 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5407,7 +5621,7 @@
 			)
 			(table_cell "6"
 				(exclude_from_sim no)
-				(at 180.34 146.05 0)
+				(at 175.17 146.05 0)
 				(size 10 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5423,7 +5637,7 @@
 			)
 			(table_cell "blue"
 				(exclude_from_sim no)
-				(at 190.34 146.05 0)
+				(at 185.17 146.05 0)
 				(size 12 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5439,7 +5653,7 @@
 			)
 			(table_cell "block inst. switch"
 				(exclude_from_sim no)
-				(at 202.34 146.05 0)
+				(at 197.17 146.05 0)
 				(size 20 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5456,7 +5670,7 @@
 			)
 			(table_cell "7"
 				(exclude_from_sim no)
-				(at 180.34 148.59 0)
+				(at 175.17 148.59 0)
 				(size 10 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5472,7 +5686,7 @@
 			)
 			(table_cell "black"
 				(exclude_from_sim no)
-				(at 190.34 148.59 0)
+				(at 185.17 148.59 0)
 				(size 12 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5488,7 +5702,7 @@
 			)
 			(table_cell "bell 0V"
 				(exclude_from_sim no)
-				(at 202.34 148.59 0)
+				(at 197.17 148.59 0)
 				(size 20 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5505,7 +5719,7 @@
 			)
 			(table_cell "8"
 				(exclude_from_sim no)
-				(at 180.34 151.13 0)
+				(at 175.17 151.13 0)
 				(size 10 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5521,7 +5735,7 @@
 			)
 			(table_cell "white"
 				(exclude_from_sim no)
-				(at 190.34 151.13 0)
+				(at 185.17 151.13 0)
 				(size 12 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5537,7 +5751,7 @@
 			)
 			(table_cell "bell +"
 				(exclude_from_sim no)
-				(at 202.34 151.13 0)
+				(at 197.17 151.13 0)
 				(size 20 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -5554,9 +5768,86 @@
 			)
 		)
 	)
+	(label "0.5mH"
+		(at 82.0226 143.2494 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "51099b89-638a-4eea-86b8-e426752ae64b")
+	)
+	(symbol
+		(lib_id "Device:D_TVS_Small_Filled")
+		(at 85.09 189.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0103f57c-6f4d-42b3-b446-9522a8f691bf")
+		(property "Reference" "D3"
+			(at 81.28 187.96 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "SA12CA"
+			(at 90.17 190.5 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bidirectional transient-voltage-suppression diode, small symbol, filled shape"
+			(at 85.09 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8c4db069-f28c-4f02-b065-2cbb4c985ca7")
+		)
+		(pin "1"
+			(uuid "55f9d29d-a843-49d4-9a14-235df2f9350d")
+		)
+		(instances
+			(project ""
+				(path "/3237aea2-5387-4c42-ab8d-a5f0ed576b6e"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Connector:TestPoint_Small")
-		(at 44.45 186.69 0)
+		(at 44.45 182.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5564,7 +5855,7 @@
 		(dnp no)
 		(uuid "12b5de19-cd39-41dd-91c1-cceb9863a07b")
 		(property "Reference" "14"
-			(at 43.434 184.912 0)
+			(at 43.434 181.102 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5573,7 +5864,7 @@
 			)
 		)
 		(property "Value" "TestPoint_Small"
-			(at 45.72 187.9599 0)
+			(at 45.72 184.1499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5583,7 +5874,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 49.53 186.69 0)
+			(at 49.53 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5592,7 +5883,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 49.53 186.69 0)
+			(at 49.53 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5601,7 +5892,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 44.45 186.69 0)
+			(at 44.45 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5965,7 +6256,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint_Small")
-		(at 81.28 186.69 0)
+		(at 81.28 182.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5974,7 +6265,7 @@
 		(fields_autoplaced yes)
 		(uuid "26c5bf12-2088-47f4-8fd2-4c66196f4c7a")
 		(property "Reference" "1411"
-			(at 82.55 185.4199 0)
+			(at 82.55 181.6099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5984,7 +6275,7 @@
 			)
 		)
 		(property "Value" "TestPoint_Small"
-			(at 82.55 187.9599 0)
+			(at 82.55 184.1499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5994,7 +6285,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 86.36 186.69 0)
+			(at 86.36 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6003,7 +6294,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 86.36 186.69 0)
+			(at 86.36 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6012,7 +6303,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 81.28 186.69 0)
+			(at 81.28 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7010,7 +7301,7 @@
 				)
 			)
 		)
-		(property "Value" "1N4007"
+		(property "Value" "UF4007"
 			(at 89.0839 151.4583 0)
 			(effects
 				(font
@@ -7421,7 +7712,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint_Small")
-		(at 107.95 186.69 0)
+		(at 107.95 182.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7429,7 +7720,7 @@
 		(dnp no)
 		(uuid "71061b0a-4ea9-46de-aac6-58e763e06143")
 		(property "Reference" "13"
-			(at 106.934 184.912 0)
+			(at 106.934 181.102 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7438,7 +7729,7 @@
 			)
 		)
 		(property "Value" "TestPoint_Small"
-			(at 109.22 187.9599 0)
+			(at 109.22 184.1499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7448,7 +7739,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.03 186.69 0)
+			(at 113.03 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7457,7 +7748,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 113.03 186.69 0)
+			(at 113.03 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7466,7 +7757,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 107.95 186.69 0)
+			(at 107.95 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7903,7 +8194,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint_Small")
-		(at 88.9 186.69 0)
+		(at 88.9 182.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7912,7 +8203,7 @@
 		(fields_autoplaced yes)
 		(uuid "92e749d4-0855-4365-aa1d-6f61c6b6e48d")
 		(property "Reference" "1412"
-			(at 90.17 185.4199 0)
+			(at 90.17 181.6099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7922,7 +8213,7 @@
 			)
 		)
 		(property "Value" "TestPoint_Small"
-			(at 90.17 187.9599 0)
+			(at 90.17 184.1499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7932,7 +8223,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 93.98 186.69 0)
+			(at 93.98 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7941,7 +8232,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 93.98 186.69 0)
+			(at 93.98 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7950,7 +8241,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 88.9 186.69 0)
+			(at 88.9 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8661,7 +8952,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4007")
-		(at 85.09 194.31 180)
+		(at 85.09 193.04 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8669,15 +8960,15 @@
 		(dnp no)
 		(uuid "d2f5181e-985a-4232-ada6-dacff1261549")
 		(property "Reference" "D1"
-			(at 81.28 193.04 0)
+			(at 81.28 191.77 0)
 			(effects
 				(font
 					(size 1 1)
 				)
 			)
 		)
-		(property "Value" "1N4007"
-			(at 90.7682 195.7478 0)
+		(property "Value" "UF4007"
+			(at 90.7682 194.4778 0)
 			(effects
 				(font
 					(size 1 1)
@@ -8685,7 +8976,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-			(at 85.09 189.865 0)
+			(at 85.09 188.595 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8694,7 +8985,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
-			(at 85.09 194.31 0)
+			(at 85.09 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8703,7 +8994,7 @@
 			)
 		)
 		(property "Description" "1000V 1A General Purpose Rectifier Diode, DO-41"
-			(at 85.09 194.31 0)
+			(at 85.09 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8712,7 +9003,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 85.09 194.31 0)
+			(at 85.09 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8721,7 +9012,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 85.09 194.31 0)
+			(at 85.09 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)

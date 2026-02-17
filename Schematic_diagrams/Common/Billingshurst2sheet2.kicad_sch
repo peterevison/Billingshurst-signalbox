@@ -5,10 +5,10 @@
 	(uuid "08433a2c-77dc-4b38-ba3d-98a3856a7ee4")
 	(paper "A4")
 	(title_block
-		(title "4-Channel EL817 Optocoupler")
-		(date "2026-02-09")
-		(rev "A")
-		(company "Amberley Museum - Billingshurst Signal Box")
+		(title "Track Diagram Lamp Controller")
+		(date "07/02/2026")
+		(rev "B")
+		(company "Amerley Museum - Billingshurst Signalbox")
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint_Small"
