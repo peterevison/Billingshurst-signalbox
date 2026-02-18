@@ -2758,7 +2758,7 @@
 		)
 		(uuid "1160906f-1234-49b0-ac3d-fcd337e8d76c")
 	)
-	(text_box "Notes\n1. Terminal numbers (in green) refer to right hand \n   terminal strip on back of blockshelf, shown on \n   drawing Blockshelf Terminations (1), left column\n2. 6V and 10V supply do not share a common 0V\n3. 10V supply derived from 12V using a series resistor\n4. To revert to original wiring, remove all new wiring\n	and 1000ohm resistor, and replace links: terminals 2,3\n	and terminals 1,4 on rear blockshelf terminal block\n	(C cable, black terminals, shown on drawing Blockshelf\n	Terminations (1))"
+	(text_box "Notes\n1. Terminal numbers (in green) refer to right hand (black) \n   terminal strip on back of blockshelf, shown on \n   drawing Blockshelf Terminations (1), left column\n2. 6V and 10V supply do not share a common 0V\n3. 10V supply derived from 12V using a series resistor\n4. To revert to original wiring, remove all new wiring\n	and 1000ohm resistor, and replace links: terminals 2,3\n	and terminals 1,4 on rear blockshelf terminal block\n	(C cable, black terminals, shown on drawing Blockshelf\n	Terminations (1))"
 		(exclude_from_sim no)
 		(at 220.98 128.27 0)
 		(size 62.23 24.13)
