@@ -8,7 +8,7 @@
 		(title "Track Diagram Lamp Controller")
 		(date "07/02/2026")
 		(rev "B")
-		(company "Amerley Museum - Billingshurst Signalbox")
+		(company "Amberley Museum - Billingshurst Signalbox")
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint_Small"
