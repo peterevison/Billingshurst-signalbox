@@ -3,14 +3,13 @@
   PE 15/02/2026
 
   Billingshurst_up (hopefully same script as up-loaded to Nano 14/02/2026)
-  branch file Billingshurst-up-proposal 15/03/26, 24/03/26
+  branch file Billingshurst-up-proposal opened 15/3/2026, completed 25/03/2026
 
 */
 
 //global variables
 const int signal_read_pin = 9;  // read down distant (signal A) input D9
 const int lamp[8] = {0, 2, 3, 4, 5, 6, 7, 8}; // set up array to define digital o/p no. to each lamp e.g. lamp 1 is D2, lamp 2 is D3 etc, lamp[0] not used
-bool pause; //status of pause switch (toggling on/off button or switch), pause when HIGH
 bool debug = HIGH;
 unsigned long interval = 0;  // in msec (use type unsigned long for timing - lasts ~50hrs, type int can go out of range)
 int lamp_no;  // lamp (track section) number
@@ -33,6 +32,8 @@ const int BT_BELL      = 9;
 const int SIGNAL_13    = 10;
 const int BT_BELL_PUSH = 11;
 const int BLOCK_INSTR  = 12;
+const float BELL_PAUSE1  = 0.15e3;
+const float BELL_PAUSE2  = 0.3e3;
 void setup() {
   if (debug) {
     Serial.begin(9600);  //  setup Serial Monitor output for speed debug
@@ -42,6 +43,8 @@ void setup() {
     digitalWrite(thisPin, HIGH); // set relays 2-9 initially de-energised (o/p = HIGH)
   }
   for (int thisPin = 10; thisPin <= 12; thisPin++) pinMode(thisPin, INPUT);  // set digital i/o pins 10 to 12 as inputs
+  int seedValue = analogRead(A7); // set up for random number generation in fn line_clear_request(), A7 is unconnected noise
+  randomSeed(seedValue);
 }
 
 void loop() {
@@ -52,9 +55,7 @@ void loop() {
   wait_for(BT_BELL_PUSH);
   delay(0.75e3);
   Serial.println("first bell read");
-  ding(3);
-  delay(0.3e3);
-  ding(1);
+  line_clear_request();
   Serial.println("sent line clear request, wait for bell push");
   wait_for(BT_BELL_PUSH);
   Serial.println("BT bell push received, set block inst to LC");
@@ -100,13 +101,55 @@ void loop() {
 void ding(int nrings) {
   for (int n = 1; n <= nrings; n++) {
     digitalWrite(BT_BELL, LOW);  // energise bell push relay briefly - change polarity if optocoupled relay is used
-    delay(0.15e3);
+    delay(BELL_PAUSE1);
     digitalWrite(BT_BELL, HIGH);
-    delay(0.15e3);
+    delay(BELL_PAUSE1);
   }
 }
 
 void wait_for(int input_signal)  {
   while (digitalRead(input_signal)) delay(100);
   return;
+}
+
+void line_clear_request() {
+  int train_type = random(8);
+  switch (train_type) { // deliberately twice as much chance it being ordinary passenger
+    case 1: // ECS 2-2-1
+      ding(2);
+      delay(BELL_PAUSE2);
+      ding(2);
+      delay(BELL_PAUSE2);
+      ding(1);
+      break;
+    case 2: // light engine 2-3
+      ding(2);
+      delay(BELL_PAUSE2);
+      ding(3);
+      delay(BELL_PAUSE2);
+      break;
+    case 3: // express freight 3-1-1
+      ding(3);
+      delay(BELL_PAUSE2);
+      ding(1);
+      delay(BELL_PAUSE2);
+      ding(1);
+      break;
+    case 4: // ordinary passenger 3-1
+      ding(3);
+      delay(BELL_PAUSE2);
+      ding(1);
+      break;
+    case 5: // express passenger 4
+      ding(4);
+      break;
+    case 6: // class 6 freight 5
+      ding(5);
+      break;
+    case 7: // ordinary passenger 3-1
+      ding(3);
+      delay(BELL_PAUSE2);
+      ding(1);
+      break;
+  }
 }
