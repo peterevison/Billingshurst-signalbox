@@ -5,7 +5,7 @@
 	(uuid "aad29df0-d981-468f-91fb-fd321cbc3a70")
 	(paper "A4")
 	(title_block
-		(title "Billingshurst Testbox")
+		(title "Billingshurst Testbox - Connections to Main Controller")
 		(date "19/12/2025")
 		(rev "A")
 		(company "Amberley Museum")
@@ -4186,6 +4186,16 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 49.53) (xy 177.8 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "554dfa93-e27a-4a15-8a8e-015df782a0ea")
+	)
+	(wire
+		(pts
 			(xy 162.56 49.53) (xy 104.14 49.53)
 		)
 		(stroke
@@ -4823,16 +4833,6 @@
 			(type default)
 		)
 		(uuid "fa9d2050-b458-44aa-b624-44eb99d56773")
-	)
-	(wire
-		(pts
-			(xy 173.99 49.53) (xy 177.8 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fbafa091-a476-4258-ac23-01e57e891983")
 	)
 	(wire
 		(pts

@@ -1951,7 +1951,7 @@
 		)
 		(uuid "123fd27a-1d99-4b5b-aa11-46005750d2d1")
 	)
-	(hierarchical_label "o{slash}p"
+	(hierarchical_label "Vin"
 		(shape input)
 		(at 187.96 62.23 0)
 		(effects
