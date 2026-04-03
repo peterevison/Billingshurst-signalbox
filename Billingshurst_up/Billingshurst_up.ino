@@ -108,7 +108,7 @@ void ding(int nrings) {
 }
 
 void wait_for(int input_signal)  {
-  while (digitalRead(input_signal)) delay(100);
+  while (digitalRead(input_signal)) delay(100); // inputs are active LOW
   return;
 }
 
