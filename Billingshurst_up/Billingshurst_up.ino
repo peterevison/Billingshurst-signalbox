@@ -18,6 +18,7 @@ int multi = 6;     // interval multiplier setting = 6x
 // mini=100, multi=5 transit times: pot=min  5min; pot=mid 2min40sec; pot=max 40sec;
 int nrings; // no. of bell rings
 int analogPin = A0; // speed potentiometer wiper (middle terminal) connected to analog pin 0 (A0)
+int seedValue;
 
 /*
   DIGITAL I/Os:
@@ -42,37 +43,41 @@ void setup() {
     pinMode(thisPin, OUTPUT);
     digitalWrite(thisPin, HIGH); // set relays 2-9 initially de-energised (o/p = HIGH)
   }
-  for (int thisPin = 10; thisPin <= 12; thisPin++) pinMode(thisPin, INPUT);  // set digital i/o pins 10 to 12 as inputs
-  int seedValue = analogRead(A7); // set up for random number generation in fn line_clear_request(), A7 is unconnected noise
+  for (int thisPin = 10; thisPin <= 12; thisPin++) pinMode(thisPin, INPUT_PULLUP);  // set digital i/o pins 10 to 12 as inputs
+  seedValue = analogRead(A7); // set up for random number generation in fn line_clear_request(), A7 is unconnected noise
   randomSeed(seedValue);
 }
 
 void loop() {
-  Serial.println("start loop");
+  if (debug)  {
+    Serial.println("\n start loop");
+    Serial.print("seedValue =");
+    Serial.println(seedValue);
+  }
   delay(2e3); // initial 2s delay
   ding(1);  // call to attention
-  Serial.println("first bell sent, wait for reply");
+  if (debug)   Serial.println("first bell sent, wait for reply");
   wait_for(BT_BELL_PUSH);
   delay(0.75e3);
-  Serial.println("first bell read");
+  if (debug)   Serial.println("first bell read");
   line_clear_request();
-  Serial.println("sent line clear request, wait for bell push");
+  if (debug)   Serial.println("sent line clear request, wait for bell push");
   wait_for(BT_BELL_PUSH);
-  Serial.println("BT bell push received, set block inst to LC");
+  if (debug)   Serial.println("BT bell push received, set block inst to LC");
   delay(2.0e3);
   wait_for(BLOCK_INSTR); // await input from BT up block instrument
-  Serial.println("block instrument received");
+  if (debug)   Serial.println("block instrument received");
   delay(5e3);
   ding(2);  // train entering section
-  Serial.println("sent train entering section, so reply");
+  if (debug)   Serial.println("sent train entering section, so reply");
   wait_for(BT_BELL_PUSH);
-  Serial.println("bell push received");
+  if (debug)   Serial.println("bell push received");
   delay(4e3);
   interval = multi * (analogRead(analogPin) + mini); // read speed input pin (from pot) to set interval
   digitalWrite(lamp[1], LOW);  // switch on lamp 1 (LOW gives lamp on)
-  Serial.println("awaiting signal 13");
+  if (debug)   Serial.println("awaiting signal 13");
   wait_for(SIGNAL_13);    // pause at lamp 2 on until i/p goes low, ie signal 13 is reversed (all clear, on)
-  Serial.println("signal 13 is off");
+  if (debug)   Serial.println("signal 13 is off");
   delay(interval * 6);  // short section between 2 and 3
   digitalWrite(lamp[2], LOW);  // switch on lamp 2 (LOW gives lamp on)
   delay(interval);       // time taken for train to pass insulated section break
@@ -95,6 +100,7 @@ void loop() {
   digitalWrite(lamp[6], HIGH);   // switch off penultimate lamp
   delay(interval * 10);  // time taken for train to reach next section break
   digitalWrite(lamp[7], HIGH);   // switch off final lamp
+  if (debug)   Serial.println("idle until reset");
   while (1); // stop further execution
 }
 
@@ -113,7 +119,11 @@ void wait_for(int input_signal)  {
 }
 
 void line_clear_request() {
-  int train_type = random(8);
+  int train_type = random(1, 8);
+  if (debug) {
+    Serial.print("train type =");
+    Serial.println(train_type);
+  }
   switch (train_type) { // deliberately twice as much chance it being ordinary passenger
     case 1: // ECS 2-2-1
       ding(2);
