@@ -18,7 +18,6 @@ int multi = 6;     // interval multiplier setting = 6x
 // mini=100, multi=5 transit times: pot=min  5min; pot=mid 2min40sec; pot=max 40sec;
 int nrings; // no. of bell rings
 int analogPin = A0; // speed potentiometer wiper (middle terminal) connected to analog pin 0 (A0)
-int seedValue;
 
 /*
   DIGITAL I/Os:
@@ -44,16 +43,11 @@ void setup() {
     digitalWrite(thisPin, HIGH); // set relays 2-9 initially de-energised (o/p = HIGH)
   }
   for (int thisPin = 10; thisPin <= 12; thisPin++) pinMode(thisPin, INPUT_PULLUP);  // set digital i/o pins 10 to 12 as inputs
-  seedValue = analogRead(A7); // set up for random number generation in fn line_clear_request(), A7 is unconnected noise
-  randomSeed(seedValue);
+  randomSeed(analogRead(A7)); // set up for random number generation in fn line_clear_request(), A7 is unconnected noise
 }
 
 void loop() {
-  if (debug)  {
-    Serial.println("\n start loop");
-    Serial.print("seedValue =");
-    Serial.println(seedValue);
-  }
+  if (debug)   Serial.println("\n start loop");
   delay(2e3); // initial 2s delay
   ding(1);  // call to attention
   if (debug)   Serial.println("first bell sent, wait for reply");
@@ -69,12 +63,13 @@ void loop() {
   if (debug)   Serial.println("block instrument received");
   delay(5e3);
   ding(2);  // train entering section
-  if (debug)   Serial.println("sent train entering section, so reply");
-  wait_for(BT_BELL_PUSH);
-  if (debug)   Serial.println("bell push received");
-  delay(4e3);
+  if (debug)   Serial.println("sent train entering section, can acknowledge and set BI to train on line");
+  // wait_for(BT_BELL_PUSH);
+  // if (debug)   Serial.println("bell push received");
+  delay(4e3); // train reaches Cray Lane AHB
+  // delay(4e3); // train reaches Adversane AHB
   interval = multi * (analogRead(analogPin) + mini); // read speed input pin (from pot) to set interval
-  digitalWrite(lamp[1], LOW);  // switch on lamp 1 (LOW gives lamp on)
+  digitalWrite(lamp[1], LOW);  // switch on lamp 1 (LOW gives lamp on) - treadle A activated, "train waiting"
   if (debug)   Serial.println("awaiting signal 13");
   wait_for(SIGNAL_13);    // pause at lamp 2 on until i/p goes low, ie signal 13 is reversed (all clear, on)
   if (debug)   Serial.println("signal 13 is off");
@@ -94,7 +89,9 @@ void loop() {
     digitalWrite(lamp[lamp_no - 1], HIGH); // switch off previous lamp
     delay(interval * 10); // time taken for train to reach next section break
   }
-  delay(interval * 25); // long section between 6 and 7
+  delay(interval * 15); // long section between 6 and 7
+  // train reaches Barns Green AHB
+  delay(interval * 10);
   digitalWrite(lamp[7], LOW);   // switch on final lamp
   delay(interval); // time taken for train to pass insulated section break
   digitalWrite(lamp[6], HIGH);   // switch off penultimate lamp
@@ -119,47 +116,42 @@ void wait_for(int input_signal)  {
 }
 
 void line_clear_request() {
-  int train_type = random(1, 8);
+  long train_type = random(6);
   if (debug) {
     Serial.print("train type =");
     Serial.println(train_type);
   }
-  switch (train_type) { // deliberately twice as much chance it being ordinary passenger
-    case 1: // ECS 2-2-1
+  switch (train_type) {
+    case 0: // ECS 2-2-1
       ding(2);
       delay(BELL_PAUSE2);
       ding(2);
       delay(BELL_PAUSE2);
       ding(1);
       break;
-    case 2: // light engine 2-3
+    case 1: // light engine 2-3
       ding(2);
       delay(BELL_PAUSE2);
       ding(3);
       delay(BELL_PAUSE2);
       break;
-    case 3: // express freight 3-1-1
+    case 2: // express freight 3-1-1
       ding(3);
       delay(BELL_PAUSE2);
       ding(1);
       delay(BELL_PAUSE2);
       ding(1);
       break;
-    case 4: // ordinary passenger 3-1
+    case 3: // ordinary passenger 3-1
       ding(3);
       delay(BELL_PAUSE2);
       ding(1);
       break;
-    case 5: // express passenger 4
+    case 4: // express passenger 4
       ding(4);
       break;
-    case 6: // class 6 freight 5
+    case 5: // class 6 freight 5
       ding(5);
-      break;
-    case 7: // ordinary passenger 3-1
-      ding(3);
-      delay(BELL_PAUSE2);
-      ding(1);
       break;
   }
 }

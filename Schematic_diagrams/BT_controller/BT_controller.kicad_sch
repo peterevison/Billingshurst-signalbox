@@ -12924,7 +12924,7 @@
 		)
 		(uuid "084d0b2d-4703-490b-96ab-359acffd8b92")
 	)
-	(text "o/p ch1 Train Waiting KE"
+	(text "~{o/p ch1 Train Waiting KE}"
 		(exclude_from_sim no)
 		(at 175.1507 100.6578 0)
 		(effects
@@ -13051,7 +13051,7 @@
 		)
 		(uuid "2e61764a-5960-4580-82e7-26a4061474da")
 	)
-	(text "o/p ch1 MDD/MDF KE"
+	(text "~{o/p ch1 MDD/MDF KE}"
 		(exclude_from_sim no)
 		(at 175.5772 35.8317 0)
 		(effects
@@ -13101,7 +13101,7 @@
 		)
 		(uuid "3dd01a7a-3782-4cd9-8977-4444e15d873e")
 	)
-	(text "o/p ch5 DC KE"
+	(text "~{o/p ch5 DC KE}"
 		(exclude_from_sim no)
 		(at 172.72 45.72 0)
 		(effects
@@ -13151,7 +13151,7 @@
 		)
 		(uuid "5a7570ba-472d-493e-bcf5-d7e7362f29cb")
 	)
-	(text "o/p ch3 DA KE"
+	(text "~{o/p ch3 DA KE}"
 		(exclude_from_sim no)
 		(at 172.6579 40.6238 0)
 		(effects
@@ -13244,7 +13244,7 @@
 		)
 		(uuid "6caafa8a-b26f-4cd3-8710-ec150967e4b4")
 	)
-	(text "o/p ch5 UF KE"
+	(text "~{o/p ch5 UF KE}"
 		(exclude_from_sim no)
 		(at 171.4986 110.9344 0)
 		(effects
@@ -13266,7 +13266,7 @@
 		)
 		(uuid "6f0188b2-7fe0-4a67-8df5-5e8e9724357a")
 	)
-	(text "o/p ch4 UE KE"
+	(text "~{o/p ch4 UE KE}"
 		(exclude_from_sim no)
 		(at 171.442 108.4431 0)
 		(effects
@@ -13296,7 +13296,7 @@
 		)
 		(uuid "73ccc6a3-b67a-4bc8-b8ef-df868872ff73")
 	)
-	(text "o/p ch8 BT Bell"
+	(text "~{o/p ch8 BT Bell}"
 		(exclude_from_sim no)
 		(at 172.3715 118.4601 0)
 		(effects
@@ -13326,7 +13326,7 @@
 		)
 		(uuid "8d7a9c50-6dcc-417a-8fc7-a1d29e8958b7")
 	)
-	(text "o/p ch6 MEK(X) KE"
+	(text "~{o/p ch6 MEK(X) KE}"
 		(exclude_from_sim no)
 		(at 173.3105 113.454 0)
 		(effects
@@ -13347,7 +13347,7 @@
 		)
 		(uuid "9068f85f-d36c-4310-8abf-40546880052e")
 	)
-	(text "o/p ch4 DB KE"
+	(text "~{o/p ch4 DB KE}"
 		(exclude_from_sim no)
 		(at 172.729 43.1607 0)
 		(effects
@@ -13367,7 +13367,7 @@
 		)
 		(uuid "a06d4c61-e307-49bc-878f-12c708c012b8")
 	)
-	(text "o/p ch6 DD KE"
+	(text "~{o/p ch6 DD KE}"
 		(exclude_from_sim no)
 		(at 172.7733 48.2273 0)
 		(effects
@@ -13435,7 +13435,7 @@
 		)
 		(uuid "b6e943a4-ef1b-47e1-bb67-db04bc09ef75")
 	)
-	(text "o/p ch2 MDH(X) KE"
+	(text "~{o/p ch2 MDH(X) KE}"
 		(exclude_from_sim no)
 		(at 174.5612 38.3717 0)
 		(effects
@@ -13495,7 +13495,7 @@
 		)
 		(uuid "c631ef2a-8076-403a-a201-c075f0778535")
 	)
-	(text "o/p ch3 UD KE"
+	(text "~{o/p ch3 UD KE}"
 		(exclude_from_sim no)
 		(at 171.3571 105.8103 0)
 		(effects
@@ -13547,7 +13547,7 @@
 		)
 		(uuid "d3bca8fd-0d49-4dba-b3ae-aeadc0fd9274")
 	)
-	(text "o/p ch7 DE KE"
+	(text "~{o/p ch7 DE KE}"
 		(exclude_from_sim no)
 		(at 172.7378 50.7167 0)
 		(effects
@@ -13613,7 +13613,7 @@
 		)
 		(uuid "dc5396b5-0d82-407f-86d7-d9f34fa29b28")
 	)
-	(text "o/p ch2 UC KE"
+	(text "~{o/p ch2 UC KE}"
 		(exclude_from_sim no)
 		(at 171.3288 103.2906 0)
 		(effects
@@ -13633,7 +13633,7 @@
 		)
 		(uuid "e19287d4-d412-46e7-b08d-a65077b7d237")
 	)
-	(text "o/p ch7 MEL KE"
+	(text "~{o/p ch7 MEL KE}"
 		(exclude_from_sim no)
 		(at 172.263 116.0586 0)
 		(effects
