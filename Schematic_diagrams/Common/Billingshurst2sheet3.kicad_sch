@@ -432,17 +432,6 @@
 		)
 		(uuid "4e62e3b9-d28d-49cb-84f1-f615cc1bd50b")
 	)
-	(hierarchical_label "Bell_B12"
-		(shape output)
-		(at 209.55 92.71 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "519d2b60-d8f2-43d8-b2f7-f3fa5599d604")
-	)
 	(hierarchical_label "o{slash}p4"
 		(shape output)
 		(at 133.35 97.79 0)
