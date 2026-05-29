@@ -4,13 +4,12 @@
 
   Billingshurst_up (hopefully same script as up-loaded to Nano 14/02/2026)
   branch file Billingshurst-up-proposal opened 15/3/2026, completed 25/03/2026
-  branch file model_signal opened 29/4/2026, decision taken not to control model signal 26/5/26
-  although some wiring changes remain
 
 */
 
 //global variables
-const int lamp[8] = {0, 10, 3, 4, 5, 6, 7, 8}; // set up array to define digital o/p no. to each lamp e.g. lamp 1 is D10, lamp 2 is D3 etc, lamp[0] not used
+const int signal_read_pin = 9;  // read down distant (signal A) input D9
+const int lamp[8] = {0, 2, 3, 4, 5, 6, 7, 8}; // set up array to define digital o/p no. to each lamp e.g. lamp 1 is D2, lamp 2 is D3 etc, lamp[0] not used
 bool debug = HIGH;
 unsigned long interval = 0;  // in msec (use type unsigned long for timing - lasts ~50hrs, type int can go out of range)
 int lamp_no;  // lamp (track section) number
@@ -19,62 +18,61 @@ int multi = 6;     // interval multiplier setting = 6x
 // mini=100, multi=5 transit times: pot=min  5min; pot=mid 2min40sec; pot=max 40sec;
 int nrings; // no. of bell rings
 int analogPin = A0; // speed potentiometer wiper (middle terminal) connected to analog pin 0 (A0)
+
 /*
   DIGITAL I/Os:
   D0-1   spare (reserved for debug comms)
-  D2     i/p   Signal 13 input
-  D3-10  o/ps  outputs to relay module
-  D11    i/p   BT bell push input
-  D12    i/p   BT up block instrument
+  D2-8   o/ps  track diagram lamp outputs to relay module
+  D9     o/p   BT bell output via relay module
+  D10    i/p   signal 13 repeater 2.3V signal
+  D11    i/p   BT bell push 10V signal
+  D12    i/p   BT up block instrument  - 3V signal from BT UP commutator
 */
-const int SIGNAL_13_IN  = 2;  // input (numbers are digital input nos on Nano)
-const int BT_BELL       = 9;  // output
-const int BT_BELL_PUSH  = 11; // input
-const int BLOCK_INSTR   = 12; // input
-const float BELL_PAUSE1  = 0.15e3; // 0.15secs
-const float BELL_PAUSE2  = 0.3e3;  // 0.3secs
+const int BT_BELL      = 9;
+const int SIGNAL_13    = 10;
+const int BT_BELL_PUSH = 11;
+const int BLOCK_INSTR  = 12;
+const float BELL_PAUSE1  = 0.15e3;
+const float BELL_PAUSE2  = 0.3e3;
 void setup() {
   if (debug) {
     Serial.begin(9600);  //  setup Serial Monitor output for speed debug
   }
-  pinMode(SIGNAL_13_IN, INPUT_PULLUP);
-  pinMode(BT_BELL, OUTPUT);
-  pinMode(BT_BELL_PUSH, INPUT_PULLUP);
-  pinMode(BLOCK_INSTR, INPUT_PULLUP);
-  for (int thisPin = 3; thisPin <= 10; thisPin++) {  // set digital i/o pins 3 to 8 as outputs (to lamps and bell)
+  for (int thisPin = 2; thisPin <= 9; thisPin++) {  // set digital i/o pins 2 to 9 as outputs
     pinMode(thisPin, OUTPUT);
     digitalWrite(thisPin, HIGH); // set relays 2-9 initially de-energised (o/p = HIGH)
   }
-  randomSeed(analogRead(A7)); // set up for random number generation in fn line_clear_request(), A7 is unconnected noise
+  for (int thisPin = 10; thisPin <= 12; thisPin++) pinMode(thisPin, INPUT);  // set digital i/o pins 10 to 12 as inputs
+  int seedValue = analogRead(A7); // set up for random number generation in fn line_clear_request(), A7 is unconnected noise
+  randomSeed(seedValue);
 }
 
 void loop() {
-  if (debug)   Serial.println("\n start loop");
-  delay(4e3); // initial 4s delay
+  Serial.println("start loop");
+  delay(2e3); // initial 2s delay
   ding(1);  // call to attention
-  if (debug)   Serial.println("first bell sent, wait for reply");
+  Serial.println("first bell sent, wait for reply");
   wait_for(BT_BELL_PUSH);
   delay(0.75e3);
-  if (debug)   Serial.println("first bell read");
+  Serial.println("first bell read");
   line_clear_request();
-  if (debug)   Serial.println("sent line clear request, wait for bell push");
+  Serial.println("sent line clear request, wait for bell push");
   wait_for(BT_BELL_PUSH);
-  if (debug)   Serial.println("BT bell push received, set block inst to LC");
+  Serial.println("BT bell push received, set block inst to LC");
   delay(2.0e3);
   wait_for(BLOCK_INSTR); // await input from BT up block instrument
-  if (debug)   Serial.println("block instrument received");
-  delay(30e3);  // increased delay (request from Gary)
+  Serial.println("block instrument received");
+  delay(5e3);
   ding(2);  // train entering section
-  if (debug)   Serial.println("sent train entering section, can acknowledge and set BI to train on line");
+  Serial.println("sent train entering section, so reply");
   wait_for(BT_BELL_PUSH);
-  if (debug)   Serial.println("bell push received");
-  delay(6e3); // train reaches Cray Lane AHB
-  delay(6e3); // train reaches Adversane AHB
+  Serial.println("bell push received");
+  delay(4e3);
   interval = multi * (analogRead(analogPin) + mini); // read speed input pin (from pot) to set interval
-  digitalWrite(lamp[1], LOW);  // switch on lamp 1 (LOW gives lamp on) - treadle A activated, "train waiting"
-  if (debug)   Serial.println("train in section 1, signal 13");
-  wait_for(SIGNAL_13_IN);    // pause at lamp 2 on until i/p goes low, ie signal 13 is reversed (all clear, on)
-  if (debug)   Serial.println("signal 13 is off");
+  digitalWrite(lamp[1], LOW);  // switch on lamp 1 (LOW gives lamp on)
+  Serial.println("awaiting signal 13");
+  wait_for(SIGNAL_13);    // pause at lamp 2 on until i/p goes low, ie signal 13 is reversed (all clear, on)
+  Serial.println("signal 13 is off");
   delay(interval * 6);  // short section between 2 and 3
   digitalWrite(lamp[2], LOW);  // switch on lamp 2 (LOW gives lamp on)
   delay(interval);       // time taken for train to pass insulated section break
@@ -91,15 +89,12 @@ void loop() {
     digitalWrite(lamp[lamp_no - 1], HIGH); // switch off previous lamp
     delay(interval * 10); // time taken for train to reach next section break
   }
-  delay(interval * 15); // long section between 6 and 7
-  // train reaches Barns Green AHB
-  delay(interval * 10);
+  delay(interval * 25); // long section between 6 and 7
   digitalWrite(lamp[7], LOW);   // switch on final lamp
   delay(interval); // time taken for train to pass insulated section break
   digitalWrite(lamp[6], HIGH);   // switch off penultimate lamp
   delay(interval * 10);  // time taken for train to reach next section break
   digitalWrite(lamp[7], HIGH);   // switch off final lamp
-  if (debug)   Serial.println("idle until reset");
   while (1); // stop further execution
 }
 
@@ -113,47 +108,48 @@ void ding(int nrings) {
 }
 
 void wait_for(int input_signal)  {
-  while (digitalRead(input_signal)) delay(100); // inputs are active LOW
+  while (digitalRead(input_signal)) delay(100);
   return;
 }
 
 void line_clear_request() {
-  long train_type = random(6);
-  if (debug) {
-    Serial.print("train type =");
-    Serial.println(train_type);
-  }
-  switch (train_type) {
-    case 0: // ECS 2-2-1
+  int train_type = random(8);
+  switch (train_type) { // deliberately twice as much chance it being ordinary passenger
+    case 1: // ECS 2-2-1
       ding(2);
       delay(BELL_PAUSE2);
       ding(2);
       delay(BELL_PAUSE2);
       ding(1);
       break;
-    case 1: // light engine 2-3
+    case 2: // light engine 2-3
       ding(2);
       delay(BELL_PAUSE2);
       ding(3);
       delay(BELL_PAUSE2);
       break;
-    case 2: // express freight 3-1-1
+    case 3: // express freight 3-1-1
       ding(3);
       delay(BELL_PAUSE2);
       ding(1);
       delay(BELL_PAUSE2);
       ding(1);
       break;
-    case 3: // ordinary passenger 3-1
+    case 4: // ordinary passenger 3-1
       ding(3);
       delay(BELL_PAUSE2);
       ding(1);
       break;
-    case 4: // express passenger 4
+    case 5: // express passenger 4
       ding(4);
       break;
-    case 5: // class 6 freight 5
+    case 6: // class 6 freight 5
       ding(5);
+      break;
+    case 7: // ordinary passenger 3-1
+      ding(3);
+      delay(BELL_PAUSE2);
+      ding(1);
       break;
   }
 }
