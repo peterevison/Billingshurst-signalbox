@@ -22898,7 +22898,7 @@
 			)
 		)
 		(property "Sheetfile" "../Model_signal/model_signal.kicad_sch"
-			(at 255.27 27.94 0)
+			(at 255.27 72.39 0)
 			(effects
 				(font
 					(size 0.75 0.75)
