@@ -10,6 +10,7 @@
 		(rev "B")
 		(company "Amberley Museum")
 		(comment 1 "B: model signal added")
+		(comment 2 "C: model signal removed; wiring shown for UP line test")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x07_Pin"
@@ -3095,339 +3096,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Relay:Fujitsu_FTR-LYCA005x"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "K"
-				(at 11.43 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Fujitsu_FTR-LYCA005x"
-				(at 11.43 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Relay_THT:Relay_SPDT_Fujitsu_FTR-LYCA005x_FormC_Vertical"
-				(at 11.43 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.fujitsu.com/sg/imagesgig5/ftr-ly.pdf"
-				(at 16.51 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "Relay, SPDT Form C, vertical mount, 5-60V coil, 6A, 250VAC, 28 x 5 x 15mm"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "6A SPDT Relay"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Relay*Fujitsu*FTR?LYC*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Fujitsu_FTR-LYCA005x_0_0"
-				(polyline
-					(pts
-						(xy 7.62 5.08) (xy 7.62 2.54) (xy 6.985 3.175) (xy 7.62 3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Fujitsu_FTR-LYCA005x_0_1"
-				(rectangle
-					(start -10.16 5.08)
-					(end 10.16 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start -8.255 1.905)
-					(end -1.905 -1.905)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -7.62 -1.905) (xy -2.54 1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 5.08) (xy -5.08 1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 -5.08) (xy -5.08 -1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.905 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.635 0) (xy 0 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 0) (xy 2.54 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 5.08) (xy 2.54 2.54) (xy 3.175 3.175) (xy 2.54 3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.175 0) (xy 3.81 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 -2.54) (xy 3.175 3.81)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 -2.54) (xy 5.08 -5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Fujitsu_FTR-LYCA005x_1_1"
-				(pin passive line
-					(at -5.08 7.62 270)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -7.62 90)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 7.62 270)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -7.62 90)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 7.62 270)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "SW_SPST_1"
 			(pin_names
 				(offset 0)
@@ -4008,9 +3676,9 @@
 		)
 		(uuid "420fed7c-4ea6-46de-bc4f-50d595e27403")
 	)
-	(text "Sig A Down Dist. OFF"
+	(text "Sig A Down Dist. OFF\n(DOWN line test, connect to D9)"
 		(exclude_from_sim no)
-		(at 200.66 72.39 0)
+		(at 200.66 73.66 0)
 		(effects
 			(font
 				(size 1 1)
@@ -4374,16 +4042,6 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 17.78) (xy 185.42 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a63fc1f-62a0-4fb9-9dd7-fe7d263af7ad")
-	)
-	(wire
-		(pts
 			(xy 162.56 54.61) (xy 156.21 54.61)
 		)
 		(stroke
@@ -4494,16 +4152,6 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 97.79) (xy 242.57 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a22fe4b-4d9e-482d-9507-2196d25010cd")
-	)
-	(wire
-		(pts
 			(xy 172.72 133.35) (xy 280.67 133.35)
 		)
 		(stroke
@@ -4521,16 +4169,6 @@
 			(type default)
 		)
 		(uuid "3c635478-72d0-41d9-ad24-9421ed1898c7")
-	)
-	(wire
-		(pts
-			(xy 203.2 20.32) (xy 203.2 17.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c95d4d1-04b2-41c8-ae8f-d875f11876b5")
 	)
 	(wire
 		(pts
@@ -4644,16 +4282,6 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 113.03) (xy 260.35 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "608b9dea-cd89-4139-9b1b-dff5eea3bdc2")
-	)
-	(wire
-		(pts
 			(xy 156.21 41.91) (xy 156.21 54.61)
 		)
 		(stroke
@@ -4684,16 +4312,6 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 113.03) (xy 260.35 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "657f649f-c9c2-413d-a548-1d812b23ff66")
-	)
-	(wire
-		(pts
 			(xy 130.81 34.29) (xy 69.85 34.29)
 		)
 		(stroke
@@ -4701,16 +4319,6 @@
 			(type default)
 		)
 		(uuid "6cdb15a8-952f-4fc5-976e-a449e3d75f5c")
-	)
-	(wire
-		(pts
-			(xy 203.2 17.78) (xy 185.42 17.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d064e24-9bd4-437e-a48b-263463f80a19")
 	)
 	(wire
 		(pts
@@ -6759,71 +6367,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 203.2 35.56 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "62b2088c-a2da-410f-80e2-fec4288c49ef")
-		(property "Reference" "#PWR04"
-			(at 203.2 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 204.47 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 203.2 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 203.2 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 203.2 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "65718f5a-296f-4c40-bccb-4f3ac8e3115f")
-		)
-		(instances
-			(project ""
-				(path "/aad29df0-d981-468f-91fb-fd321cbc3a70"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED")
 		(at 69.85 48.26 270)
 		(mirror x)
@@ -7330,87 +6873,6 @@
 			(project "Billingshurst Testbox"
 				(path "/aad29df0-d981-468f-91fb-fd321cbc3a70"
 					(reference "D7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Relay:Fujitsu_FTR-LYCA005x")
-		(at 208.28 27.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aeb06093-ccf5-4b49-8eb0-f6f96edfcfe4")
-		(property "Reference" "K1"
-			(at 219.71 26.6699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 219.71 29.2099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Relay_THT:Relay_SPDT_Fujitsu_FTR-LYCA005x_FormC_Vertical"
-			(at 219.71 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.fujitsu.com/sg/imagesgig5/ftr-ly.pdf"
-			(at 224.79 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "Relay, SPDT Form C, vertical mount, 5-60V coil, 6A, 250VAC, 28 x 5 x 15mm"
-			(at 208.28 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "A1"
-			(uuid "05d5ae90-dc3d-43c1-b428-57303c013c8d")
-		)
-		(pin "14"
-			(uuid "58781afd-7966-4125-9d77-ee7400978568")
-		)
-		(pin "A2"
-			(uuid "a0b6cf7d-9d0f-49b4-9961-e928c96fc59b")
-		)
-		(pin "12"
-			(uuid "27a8b647-30aa-4948-969e-bac578a560fa")
-		)
-		(pin "11"
-			(uuid "5a1f0937-fff5-4d1a-9567-1c6aa62cee3a")
-		)
-		(instances
-			(project ""
-				(path "/aad29df0-d981-468f-91fb-fd321cbc3a70"
-					(reference "K1")
 					(unit 1)
 				)
 			)
