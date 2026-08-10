@@ -8850,6 +8850,162 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Diode:LL4148"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D11"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "1N4148"
+				(at 0 2.286 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_MiniMELF"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.vishay.com/docs/85557/ll4148.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "100V 0.15A standard switching diode, MiniMELF"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*MiniMELF*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LL4148_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LL4148_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.27)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.27)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Diode:UF5407"
 			(pin_numbers
 				(hide yes)
@@ -12242,7 +12398,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_SPDT"
+		(symbol "Switch:SW_SP3T"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -12250,8 +12406,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "SW3"
-				(at 1.27 5.08 0)
+			(property "Reference" "SW2"
+				(at 0 8.89 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -12259,7 +12415,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "SW_SPDT"
+			(property "Value" "SW_SP3T"
 				(at 0 6.35 0)
 				(effects
 					(font
@@ -12269,7 +12425,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 0 0)
+				(at -15.875 4.445 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -12286,7 +12442,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Switch, single pole double throw"
+			(property "Description" "Switch, three position, single pole triple throw, 3 position switch, SP3T"
 				(at 0 0 0)
 				(effects
 					(font
@@ -12295,7 +12451,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "switch single-pole double-throw spdt ON-ON"
+			(property "ki_keywords" "switch sp3t ON-ON-ON"
 				(at 0 0 0)
 				(effects
 					(font
@@ -12304,7 +12460,16 @@
 					(hide yes)
 				)
 			)
-			(symbol "SW_SPDT_0_1"
+			(property "ki_fp_filters" "SW* SP3T*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_SP3T_0_1"
 				(circle
 					(center -2.032 0)
 					(radius 0.4572)
@@ -12340,6 +12505,17 @@
 					)
 				)
 				(circle
+					(center 2.032 0)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
 					(center 2.032 -2.54)
 					(radius 0.4572)
 					(stroke
@@ -12351,7 +12527,7 @@
 					)
 				)
 			)
-			(symbol "SW_SPDT_1_1"
+			(symbol "SW_SP3T_1_1"
 				(rectangle
 					(start -3.175 3.81)
 					(end 3.175 -3.81)
@@ -12366,7 +12542,7 @@
 				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
-					(name "B"
+					(name "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -12384,7 +12560,25 @@
 				(pin passive line
 					(at 5.08 2.54 180)
 					(length 2.54)
-					(name "A"
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -12402,7 +12596,7 @@
 				(pin passive line
 					(at 5.08 -2.54 180)
 					(length 2.54)
-					(name "C"
+					(name "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -12950,8 +13144,8 @@
 		(uuid 822c29ac-e1a9-45ba-a98c-61620364441d)
 	)
 	(rectangle
-		(start 19.05 44.45)
-		(end 55.88 82.55)
+		(start 13.97 44.45)
+		(end 58.42 87.63)
 		(stroke
 			(width 0)
 			(type dash)
@@ -12975,7 +13169,7 @@
 	)
 	(text "Up"
 		(exclude_from_sim no)
-		(at 45.72 78.74 0)
+		(at 39.9784 78.74 0)
 		(effects
 			(font
 				(size 1 1)
@@ -13049,7 +13243,7 @@
 	)
 	(text "white"
 		(exclude_from_sim no)
-		(at 34.29 76.2 0)
+		(at 29.21 74.93 0)
 		(effects
 			(font
 				(size 1 1)
@@ -13097,6 +13291,16 @@
 			)
 		)
 		(uuid "294804ba-1fb0-462e-98fc-94011af04af9")
+	)
+	(text "Both"
+		(exclude_from_sim no)
+		(at 40.64 75.7398 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "2ad50e4c-d77b-495c-a0d4-921ab6a8a6ab")
 	)
 	(text "brown/grey"
 		(exclude_from_sim no)
@@ -13427,7 +13631,7 @@
 	)
 	(text "Train\nSpeed"
 		(exclude_from_sim no)
-		(at 24.13 64.77 0)
+		(at 20.32 58.42 0)
 		(effects
 			(font
 				(size 1 1)
@@ -13447,7 +13651,7 @@
 	)
 	(text "d.green"
 		(exclude_from_sim no)
-		(at 52.6517 56.3043 0)
+		(at 54.61 56.3168 0)
 		(effects
 			(font
 				(size 1 1)
@@ -13522,7 +13726,7 @@
 	)
 	(text "Start"
 		(exclude_from_sim no)
-		(at 27.94 68.58 0)
+		(at 22.86 67.31 0)
 		(effects
 			(font
 				(size 1 1)
@@ -13648,7 +13852,7 @@
 	)
 	(text "Down"
 		(exclude_from_sim no)
-		(at 46.0746 72.9695 0)
+		(at 40.64 73.18 0)
 		(effects
 			(font
 				(size 1 1)
@@ -13656,9 +13860,9 @@
 		)
 		(uuid "d31860ca-a658-4671-ab78-6e38e8f9ae12")
 	)
-	(text "External Box\n(end of shelf)\n6-way multicore"
+	(text "External Box\n(end of shelf)"
 		(exclude_from_sim no)
-		(at 26.67 83.82 0)
+		(at 21.59 80.01 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13834,10 +14038,22 @@
 		(uuid "9f3de84c-38bd-4d00-8944-2252479f206c")
 	)
 	(junction
+		(at 45.72 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "04c1d6ce-8510-4554-8206-b479790d5130")
+	)
+	(junction
 		(at 151.13 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "059db17d-da6a-4953-9732-c7c3d3eef2ba")
+	)
+	(junction
+		(at 45.72 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "17d6dfd9-8d8a-4fe2-b649-6483e601f376")
 	)
 	(junction
 		(at 119.38 24.13)
@@ -13852,12 +14068,6 @@
 		(uuid "390ca4af-b4a6-48ef-841a-61fb4574b4a0")
 	)
 	(junction
-		(at 31.75 64.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "45bf84d0-3ed8-4f64-b156-105ccfdd6dd3")
-	)
-	(junction
 		(at 92.71 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -13868,6 +14078,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6067f0d1-b138-431d-a286-30dbd80ee4a5")
+	)
+	(junction
+		(at 26.67 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6299636f-3725-43ce-b8b5-ebf8f78ea1ab")
 	)
 	(junction
 		(at 119.38 16.51)
@@ -13930,6 +14146,12 @@
 		(uuid "a73c1914-690c-400a-9f95-8db3ffd8b3c0")
 	)
 	(junction
+		(at 31.75 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c363d96a-663a-46b2-8bee-ab78d439699b")
+	)
+	(junction
 		(at 104.14 16.51)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -13940,6 +14162,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ddb92e62-3e87-41c5-a326-013a83e3dc33")
+	)
+	(junction
+		(at 45.72 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "de244095-1284-4075-9a1e-b2c1608a168a")
 	)
 	(junction
 		(at 134.62 46.99)
@@ -14067,6 +14295,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 71.12) (xy 43.18 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e3ce199-0252-40aa-b1b8-702eb7aad418")
+	)
+	(wire
+		(pts
 			(xy 48.26 100.33) (xy 49.53 100.33)
 		)
 		(stroke
@@ -14074,6 +14312,16 @@
 			(type default)
 		)
 		(uuid "0f128e7e-0c4b-4b5c-8435-193a0cc16f87")
+	)
+	(wire
+		(pts
+			(xy 43.18 78.74) (xy 43.18 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12cc4234-f2e1-4468-81b6-b8919e729633")
 	)
 	(wire
 		(pts
@@ -14144,6 +14392,16 @@
 			(type default)
 		)
 		(uuid "1f0420ba-85b2-4d40-ac03-1c1cca5631e2")
+	)
+	(wire
+		(pts
+			(xy 45.72 81.28) (xy 48.26 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f898424-a646-44b2-a772-0887e856cd85")
 	)
 	(wire
 		(pts
@@ -14337,7 +14595,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 77.47) (xy 35.56 77.47)
+			(xy 26.67 76.2) (xy 30.48 76.2)
 		)
 		(stroke
 			(width 0)
@@ -14364,16 +14622,6 @@
 			(type default)
 		)
 		(uuid "2f29660b-7a19-4895-984d-45413f5177e0")
-	)
-	(wire
-		(pts
-			(xy 31.75 66.04) (xy 31.75 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2fcaeed9-7005-490e-8ba6-fc21d71f48e8")
 	)
 	(wire
 		(pts
@@ -14607,6 +14855,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 57.15) (xy 48.26 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44b5d487-0005-4817-a174-18342a0a38d4")
+	)
+	(wire
+		(pts
 			(xy 234.95 116.84) (xy 240.03 116.84)
 		)
 		(stroke
@@ -14727,6 +14985,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 54.61) (xy 45.72 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50605152-7066-49a5-b202-7e759bc9851e")
+	)
+	(wire
+		(pts
 			(xy 280.67 49.53) (xy 280.67 46.99)
 		)
 		(stroke
@@ -14834,16 +15102,6 @@
 			(type default)
 		)
 		(uuid "58f70aed-7605-4693-b269-a5748b52e85b")
-	)
-	(wire
-		(pts
-			(xy 48.26 54.61) (xy 59.69 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5970d963-1965-42c9-9463-244212605aa5")
 	)
 	(wire
 		(pts
@@ -15137,7 +15395,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 76.2) (xy 31.75 77.47)
+			(xy 26.67 74.93) (xy 26.67 76.2)
 		)
 		(stroke
 			(width 0)
@@ -15177,7 +15435,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 57.15) (xy 59.69 57.15)
+			(xy 48.26 57.15) (xy 59.69 57.15)
 		)
 		(stroke
 			(width 0)
@@ -15287,16 +15545,6 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 80.01) (xy 50.8 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "87ca9dc8-907d-4a56-9d2f-2416934cb4a2")
-	)
-	(wire
-		(pts
 			(xy 129.54 134.62) (xy 129.54 81.28)
 		)
 		(stroke
@@ -15397,6 +15645,16 @@
 	)
 	(wire
 		(pts
+			(xy 31.75 64.77) (xy 43.18 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "939d1141-e980-4617-8b01-60e674b2473b")
+	)
+	(wire
+		(pts
 			(xy 116.84 129.54) (xy 121.92 129.54)
 		)
 		(stroke
@@ -15437,6 +15695,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 54.61) (xy 59.69 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96ad4cc0-fdc8-4968-8036-b25c0831aa83")
+	)
+	(wire
+		(pts
 			(xy 163.83 101.6) (xy 180.34 101.6)
 		)
 		(stroke
@@ -15447,7 +15715,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 74.93) (xy 48.26 74.93)
+			(xy 40.64 73.66) (xy 43.18 73.66)
 		)
 		(stroke
 			(width 0)
@@ -15554,16 +15822,6 @@
 			(type default)
 		)
 		(uuid "a2782405-704f-4fbe-a8cf-1ee1e361a040")
-	)
-	(wire
-		(pts
-			(xy 50.8 57.15) (xy 50.8 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a353e3dc-a76d-4948-a7d3-e0c09bd8edcb")
 	)
 	(wire
 		(pts
@@ -15807,7 +16065,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 52.07) (xy 59.69 52.07)
+			(xy 43.18 52.07) (xy 59.69 52.07)
 		)
 		(stroke
 			(width 0)
@@ -15894,16 +16152,6 @@
 			(type default)
 		)
 		(uuid "c5ebf325-f3d2-4588-bba8-ecc32ad55af8")
-	)
-	(wire
-		(pts
-			(xy 26.67 64.77) (xy 31.75 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c671afcc-efe7-4908-9767-2f8f67c3856a")
 	)
 	(wire
 		(pts
@@ -15994,6 +16242,16 @@
 			(type default)
 		)
 		(uuid "ccb7edf0-9a5a-4905-8a83-a1be713f7e67")
+	)
+	(wire
+		(pts
+			(xy 40.64 76.2) (xy 45.72 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ceae4dde-8c56-4f43-a2ac-59b3a8332d5b")
 	)
 	(wire
 		(pts
@@ -16137,6 +16395,16 @@
 	)
 	(wire
 		(pts
+			(xy 40.64 78.74) (xy 43.18 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddbed1ca-7caf-4645-8ccd-6e466515ea64")
+	)
+	(wire
+		(pts
 			(xy 69.85 130.81) (xy 90.17 130.81)
 		)
 		(stroke
@@ -16187,7 +16455,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 52.07) (xy 45.72 64.77)
+			(xy 43.18 52.07) (xy 43.18 64.77)
 		)
 		(stroke
 			(width 0)
@@ -16237,7 +16505,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 74.93) (xy 48.26 54.61)
+			(xy 43.18 73.66) (xy 43.18 71.12)
 		)
 		(stroke
 			(width 0)
@@ -16277,6 +16545,16 @@
 	)
 	(wire
 		(pts
+			(xy 43.18 81.28) (xy 45.72 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9e56b80-39a4-4a09-a4a5-3fbb23c211b9")
+	)
+	(wire
+		(pts
 			(xy 151.13 137.16) (xy 151.13 139.7)
 		)
 		(stroke
@@ -16304,6 +16582,16 @@
 			(type default)
 		)
 		(uuid "ebf8edcc-f236-4990-a934-3d0dfc1a03f9")
+	)
+	(wire
+		(pts
+			(xy 45.72 71.12) (xy 45.72 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec390ba4-72ce-4831-ba5b-cc90ae3e2bb1")
 	)
 	(wire
 		(pts
@@ -16427,7 +16715,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 64.77) (xy 45.72 64.77)
+			(xy 26.67 64.77) (xy 31.75 64.77)
 		)
 		(stroke
 			(width 0)
@@ -18294,6 +18582,92 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:LL4148")
+		(at 45.72 78.74 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "358be1b4-71a2-460b-ae06-f169efb62e2b")
+		(property "Reference" "D11"
+			(at 52.07 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "1N4148 x2"
+			(at 43.8352 75.9087 0)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_MiniMELF"
+			(at 41.275 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/85557/ll4148.pdf"
+			(at 45.72 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, MiniMELF"
+			(at 45.72 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 45.72 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 45.72 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8b5cf075-7316-4834-bbce-a782ebb374d1")
+		)
+		(pin "2"
+			(uuid "3d42bf98-ae53-42ed-beb3-d3d780d19020")
+		)
+		(instances
+			(project ""
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e"
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x15_Pin")
 		(at 64.77 123.19 0)
 		(unit 1)
@@ -18394,6 +18768,94 @@
 			(project ""
 				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:LL4148")
+		(at 45.72 73.66 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "40c22bd0-5a5c-490f-a61b-19ffde2d1bb5")
+		(property "Reference" "D12"
+			(at 39.37 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 46.99 69.85 90)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_MiniMELF"
+			(at 50.165 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/85557/ll4148.pdf"
+			(at 45.72 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, MiniMELF"
+			(at 45.72 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 45.72 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 45.72 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6bd6af4e-0454-47cc-b37d-523f7bdf240f")
+		)
+		(pin "2"
+			(uuid "3855e0b3-5b20-44f0-bb04-50af3a0367cd")
+		)
+		(instances
+			(project "BT_controller"
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e"
+					(reference "D12")
 					(unit 1)
 				)
 			)
@@ -18955,7 +19417,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 31.75 71.12 90)
+		(at 26.67 69.85 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18963,7 +19425,7 @@
 		(dnp no)
 		(uuid "59bf6dcf-ee56-4066-b60e-0f98542fd7e7")
 		(property "Reference" "SW1"
-			(at 29.21 72.39 90)
+			(at 24.13 71.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18973,7 +19435,7 @@
 			)
 		)
 		(property "Value" "Start"
-			(at 36.83 71.12 90)
+			(at 31.75 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18984,7 +19446,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 26.67 71.12 0)
+			(at 21.59 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18993,7 +19455,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 26.67 71.12 0)
+			(at 21.59 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19002,7 +19464,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 31.75 71.12 0)
+			(at 26.67 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19241,6 +19703,82 @@
 			(project ""
 				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SP3T")
+		(at 35.56 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "66ae5f44-d5e2-4adc-9ab9-8a9101dcdd1c")
+		(property "Reference" "SW2"
+			(at 35.56 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "SW_SP3T"
+			(at 35.56 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 19.685 71.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 35.56 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch, three position, single pole triple throw, 3 position switch, SP3T"
+			(at 35.56 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "86ee800e-3129-4fb8-892c-f9995a9edebe")
+		)
+		(pin ""
+			(uuid "714340a8-9138-4c82-a66d-7ef9b8fe1810")
+		)
+		(pin ""
+			(uuid "459196aa-159f-4832-b70c-08034be690ec")
+		)
+		(pin ""
+			(uuid "aefbf968-2fc7-407e-9660-d961f92a586f")
+		)
+		(instances
+			(project ""
+				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e"
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -19552,78 +20090,6 @@
 			(project ""
 				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e"
 					(reference "J8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_SPDT")
-		(at 40.64 77.47 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "878da644-d209-4313-bd2e-78c1b8aadc15")
-		(property "Reference" "SW3"
-			(at 41.91 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "SW_SPDT"
-			(at 40.64 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 40.64 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 40.64 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Switch, single pole double throw"
-			(at 40.64 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin ""
-			(uuid "bd8675f4-1ce9-4726-a9cc-8a180d7b8241")
-		)
-		(pin ""
-			(uuid "454391fe-f90e-469f-9a98-1ccc5d88c540")
-		)
-		(pin ""
-			(uuid "5e1cb1bc-4e9a-430b-8c75-0c83e4e53399")
-		)
-		(instances
-			(project ""
-				(path "/5f14c763-48ee-4edd-bd2c-b1ef0de7486e"
-					(reference "SW3")
 					(unit 1)
 				)
 			)
