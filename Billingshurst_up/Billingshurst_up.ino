@@ -68,8 +68,9 @@ void loop() {
   if (debug) Serial.println("sent train entering section, can acknowledge and set BI to train on line");
   wait_for(BT_BELL_PUSH);
   if (debug) Serial.println("bell push received");
-  delay(6e3);                  // train reaches Cray Lane AHB
-  delay(6e3);                  // train reaches Adversane AHB
+  delay(15e3);                  // train reaches Cray Lane AHB
+  delay(15e3);                  // train reaches Adversane AHB
+  delay(15e3);
   digitalWrite(lamp[1], LOW);  // switch on lamp 1 (LOW gives lamp on) - treadle A activated, "train waiting"
   if (debug) Serial.println("train in section 1, signal 13");
   wait_for(SIGNAL_13_IN);                             // pause at lamp 2 on until i/p goes low, ie signal 13 is reversed (all clear, on)
