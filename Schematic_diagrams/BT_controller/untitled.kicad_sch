@@ -1,0 +1,13 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "7fe87db6-4403-4432-9d49-211659c41840")
+	(paper "A4")
+	(title_block
+		(title "AHB Control Box")
+		(date "2026-09-01")
+		(rev "A")
+	)
+	(lib_symbols)
+)

@@ -4,12 +4,17 @@
 
   Billingshurst_up (hopefully same script as up-loaded to Nano 14/02/2026)
   branch file Billingshurst-up-proposal opened 15/3/2026, completed 25/03/2026
-  branch file model_signal opened 29/4/2026, decision taken not to control model signal 26/5/26
-  although some wiring changes remain
+  branch file model_signal opened 29/4/2026
+  addition of AHB control opened 08/09/26
 
 */
 
 //global variables
+const int AHB[3] = {A1, A2, A3}; // array of Analogue i/o nos used for AHBs
+const int AHBCount = 3; // total number of AHBs
+const int CRAY_LANE = 0;
+const int ADVERSANE = 1;
+const int BARNS_GREEN = 2;
 const int lamp[8] = { 0, 10, 3, 4, 5, 6, 7, 8 };  // set up array to define digital o/p no. to each lamp e.g. lamp 1 is D10, lamp 2 is D3 etc, lamp[0] not used
 bool debug = HIGH;
 unsigned long interval = 0;  // in msec (use type unsigned long for timing - lasts ~50hrs, type int can go out of range)
@@ -20,12 +25,15 @@ int multi = 6;               // interval multiplier setting = 6x
 int nrings;          // no. of bell rings
 int analogPin = A0;  // speed potentiometer wiper (middle terminal) connected to analog pin 0 (A0)
 /*
-  DIGITAL I/Os:
+  DIGITAL I/Os: (includes analogue i/os used as digital o/ps A1, A2 and A3)
   D0-1   spare (reserved for debug comms)
   D2     i/p   Signal 13 input
   D3-10  o/ps  outputs to relay module
   D11    i/p   BT bell push input
   D12    i/p   BT up block instrument
+  A1     o/p   Cray Lane AHB
+  A2     o/p   Adversane AHB
+  A3     o/p   Barns Green AHB
 */
 const int SIGNAL_13_IN = 2;        // input (numbers are digital input nos on Nano)
 const int BT_BELL = 9;             // output
@@ -45,6 +53,10 @@ void setup() {
     pinMode(thisPin, OUTPUT);
     digitalWrite(thisPin, HIGH);  // set relays 2-9 initially de-energised (o/p = HIGH)
   }
+  for (int i = 0; i < AHBCount; i++) {  // set analogue i/o pins for AHB o/ps
+    pinMode(AHB[i], OUTPUT);
+    digitalWrite(AHB[i], LOW);  // AHBs set to barriers up initially
+  }
   randomSeed(analogRead(A7));  // set up for random number generation in fn line_clear_request(), A7 is unconnected noise
 }
 
@@ -63,15 +75,19 @@ void loop() {
   delay(2.0e3);
   wait_for(BLOCK_INSTR);  // await input from BT up block instrument
   if (debug) Serial.println("block instrument received");
-  delay(30e3);  // increased delay (request from Gary)
+  delay(20e3);
   ding(2);      // train entering section
   if (debug) Serial.println("sent train entering section, can acknowledge and set BI to train on line");
   wait_for(BT_BELL_PUSH);
   if (debug) Serial.println("bell push received");
-  delay(15e3);                  // train reaches Cray Lane AHB
-  delay(15e3);                  // train reaches Adversane AHB
-  delay(15e3);
-  digitalWrite(lamp[1], LOW);  // switch on lamp 1 (LOW gives lamp on) - treadle A activated, "train waiting"
+  delay(20e3);                  // train reaches Cray Lane AHB
+  if (debug) Serial.println("arrived at Cray Lane");
+  activate_AHB(CRAY_LANE);
+  delay(50e3);                  // train reaches Adversane AHB
+  if (debug) Serial.println("arrived at Adversane");
+  activate_AHB(ADVERSANE);
+  delay(70e3);
+  digitalWrite(lamp[1], LOW);  // switch on lamp 1 "train waiting" (LOW gives lamp on) 
   if (debug) Serial.println("train in section 1, signal 13");
   wait_for(SIGNAL_13_IN);                             // pause at lamp 2 on until i/p goes low, ie signal 13 is reversed (all clear, on)
   interval = multi * (analogRead(analogPin) + mini);  // read speed input pin (from pot) to set interval
@@ -92,9 +108,10 @@ void loop() {
     digitalWrite(lamp[lamp_no - 1], HIGH);  // switch off previous lamp
     delay(interval * 10);                   // time taken for train to reach next section break
   }
-  delay(interval * 15);  // long section between 6 and 7
-  // train reaches Barns Green AHB
-  delay(interval * 10);
+  delay(interval * 10);  // long section between 6 and 7
+  if (debug) Serial.println("arrived at Barns Green");
+  activate_AHB(BARNS_GREEN);  // train reaches Barns Green AHB
+  delay(interval * 15);
   digitalWrite(lamp[7], LOW);   // switch on final lamp
   delay(interval);              // time taken for train to pass insulated section break
   digitalWrite(lamp[6], HIGH);  // switch off penultimate lamp
@@ -159,3 +176,11 @@ void line_clear_request() {
       break;
   }
 }
+
+  void activate_AHB(int AHB_no) { // provide a 100ms +ve going pulse to appropriate monostable i/p
+    digitalWrite(AHB[AHB_no], HIGH);
+    delay(100);
+    digitalWrite(AHB[AHB_no], LOW);
+    return;
+  }
+

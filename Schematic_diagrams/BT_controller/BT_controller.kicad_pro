@@ -492,6 +492,10 @@
     [
       "4f1f016d-5616-4e7e-9c5a-de5f10a37900",
       "Model Signal"
+    ],
+    [
+      "98799161-5455-4010-871f-12f84957311f",
+      "AHB Control Box"
     ]
   ],
   "text_variables": {}
