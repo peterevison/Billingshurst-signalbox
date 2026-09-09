@@ -5,10 +5,25 @@
   Billingshurst_down25-12A
   Modified 01/06/26 to move train to section 2 whilst held waiting for distant signal
   plus some preparations for inclusion of AHB operation
+  Modified 09/09/26 to include AHB controller
 
 */
 
 //global variables
+const int AHB[3] = { A1, A2, A3 };  // array of Analogue i/o nos used for AHBs
+const int AHBCount = 3;             // total number of AHBs
+const int CRAY_LANE = 0;
+const int ADVERSANE = 1;
+const int BARNS_GREEN = 2;
+/*
+  DIGITAL I/Os: (includes analogue i/os used as digital o/ps A1, A2 and A3)
+  D0-1   spare (reserved for debug comms)
+  D2-8  o/ps   outputs to relay module
+  D9     i/p   signal A input
+  A1     o/p   Cray Lane AHB
+  A2     o/p   Adversane AHB
+  A3     o/p   Barns Green AHB
+*/
 const int signal_read_pin = 9;             // read down distant (signal A) input D9
 int lamp[8] = { 0, 2, 3, 4, 5, 6, 7, 8 };  // set up array to define digital o/p no. to each lamp e.g. lamp 1 is D2, lamp 2 is D3 etc, lamp[0] not used
 bool debug = HIGH;
@@ -26,7 +41,11 @@ void setup() {
     pinMode(thisPin, OUTPUT);
     digitalWrite(thisPin, HIGH);  // set relays initially de-energised (o/p = HIGH), this gives all lamps off initially
   }
-  pinMode(9, INPUT_PULLUP);  // set D9 as digital input
+  pinMode(9, INPUT_PULLUP);             // set D9 as digital input
+  for (int i = 0; i < AHBCount; i++) {  // set analogue i/o pins for AHB o/ps
+    pinMode(AHB[i], OUTPUT);
+    digitalWrite(AHB[i], LOW);  // AHBs set to barriers up initially
+  }
 }
 
 void loop() {
@@ -34,17 +53,18 @@ void loop() {
   interval = multi * (analogRead(analogPin) + mini);  // read speed input pin (from pot) to set interval
   // Serial.println(interval);          // speed pot debug value (read in Tools->Serial Monitor)
   delay(4e3);
-  digitalWrite(lamp[1], LOW);                            // switch on lamp 1 (LOW gives lamp on)
-  delay(interval * 5);                                   // time taken for train to reach next section break
-  digitalWrite(lamp[2], LOW);                            // switch on lamp 2 (LOW gives lamp on)
-  delay(interval);                                       // time taken for train to pass insulated section break = 1 interval
-  digitalWrite(lamp[1], HIGH);                           // switch off lamp 1
+  digitalWrite(lamp[1], LOW);   // switch on lamp 1 (LOW gives lamp on)
+  delay(interval * 5);          // time taken for train to reach next section break
+  digitalWrite(lamp[2], LOW);   // switch on lamp 2 (LOW gives lamp on)
+  delay(interval);              // time taken for train to pass insulated section break = 1 interval
+  digitalWrite(lamp[1], HIGH);  // switch off lamp 1
   if (debug) Serial.println("train in section 2, signal A");
   while (digitalRead(signal_read_pin)) delay(interval);  // pause at lamp 2 until distant A lever is reversed (all clear, on)
   if (debug) Serial.println("signal A is off");
-  delay(interval * 10);                                  //Lamp 2 to lamp 3 is a long section
-// Barns Green AHB
-  delay(interval * 10);
+  delay(interval * 20);       //Lamp 2 to lamp 3 is a long section
+  if (debug) Serial.println("arrived at Barns Green");
+  activate_AHB(BARNS_GREEN);  // train reaches Barns Green AHB
+  delay(60e3);
   for (int lamp_no = 3; lamp_no <= 6; lamp_no++) {      // continue to section 6 regardless of signals
     interval = multi * (analogRead(analogPin) + mini);  // read speed input pin (from pot) to set interval
     if (debug) {
@@ -56,16 +76,25 @@ void loop() {
     digitalWrite(lamp[lamp_no - 1], HIGH);  // switch off previous lamp
     delay(interval * 10);                   // time taken for train to reach next section break
   }
-  digitalWrite(lamp[7], LOW);   // switch on final section lamp
+  digitalWrite(lamp[7], LOW);  // switch on final section lamp
   delay(interval);
   digitalWrite(lamp[6], HIGH);
-  delay(interval * 10);         
-  // Adversane AHB
   delay(interval * 10);
-  // Cray Lane AHB
-  delay(interval * 10);       
+  if (debug) Serial.println("arrived at Adversane");
+  activate_AHB(ADVERSANE);
+  delay(50e3);
+  if (debug) Serial.println("arrived at Cray Lane");
+  activate_AHB(CRAY_LANE);
+  delay(60e3);
   digitalWrite(lamp[7], HIGH);  // switch off final lamp
   if (debug) Serial.println("idle until reset");
   while (1)
     ;  // stop further execution
+}
+
+void activate_AHB(int AHB_no) {  // provide a 100ms +ve going pulse to appropriate monostable i/p
+  digitalWrite(AHB[AHB_no], HIGH);
+  delay(100);
+  digitalWrite(AHB[AHB_no], LOW);
+  return;
 }
