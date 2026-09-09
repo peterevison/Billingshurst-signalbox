@@ -108,10 +108,10 @@ void loop() {
     digitalWrite(lamp[lamp_no - 1], HIGH);  // switch off previous lamp
     delay(interval * 10);                   // time taken for train to reach next section break
   }
-  delay(interval * 10);  // long section between 6 and 7
+  delay(interval * 20);  // long section between 6 and 7
   if (debug) Serial.println("arrived at Barns Green");
   activate_AHB(BARNS_GREEN);  // train reaches Barns Green AHB
-  delay(interval * 15);
+  delay(60e3);
   digitalWrite(lamp[7], LOW);   // switch on final lamp
   delay(interval);              // time taken for train to pass insulated section break
   digitalWrite(lamp[6], HIGH);  // switch off penultimate lamp
