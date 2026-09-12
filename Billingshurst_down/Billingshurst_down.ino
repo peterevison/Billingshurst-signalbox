@@ -80,13 +80,14 @@ void loop() {
   delay(interval);
   digitalWrite(lamp[6], HIGH);
   delay(interval * 10);
+  digitalWrite(lamp[7], HIGH);  // switch off final lamp
+  delay(interval * 10);
   if (debug) Serial.println("arrived at Adversane");
   activate_AHB(ADVERSANE);
-  delay(50e3);
+  delay(60e3);
   if (debug) Serial.println("arrived at Cray Lane");
   activate_AHB(CRAY_LANE);
   delay(60e3);
-  digitalWrite(lamp[7], HIGH);  // switch off final lamp
   if (debug) Serial.println("idle until reset");
   while (1)
     ;  // stop further execution
