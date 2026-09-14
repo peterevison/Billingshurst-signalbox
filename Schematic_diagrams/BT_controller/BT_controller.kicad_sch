@@ -25101,7 +25101,7 @@
 			(type solid)
 		)
 		(fill
-			(color 221 133 0 1.0000)
+			(color 255 153 0 1.0000)
 		)
 		(uuid "98799161-5455-4010-871f-12f84957311f")
 		(property "Sheetname" "AHB Control Box"
