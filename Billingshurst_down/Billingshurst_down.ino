@@ -64,7 +64,7 @@ void loop() {
   delay(interval * 20);       //Lamp 2 to lamp 3 is a long section
   if (debug) Serial.println("arrived at Barns Green");
   activate_AHB(BARNS_GREEN);  // train reaches Barns Green AHB
-  delay(60e3);
+  delay(20e3);
   for (int lamp_no = 3; lamp_no <= 6; lamp_no++) {      // continue to section 6 regardless of signals
     interval = multi * (analogRead(analogPin) + mini);  // read speed input pin (from pot) to set interval
     if (debug) {
