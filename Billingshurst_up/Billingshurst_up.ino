@@ -80,10 +80,10 @@ void loop() {
   if (debug) Serial.println("sent train entering section, can acknowledge and set BI to train on line");
   wait_for(BT_BELL_PUSH);
   if (debug) Serial.println("bell push received");
-  delay(10e3);                  // train reaches Cray Lane AHB22
+  delay(20e3);                  // train reaches Cray Lane AHB22
   if (debug) Serial.println("arrived at Cray Lane");
-  activate_AHB(CRAY_LANE);
-  delay(40e3);                  // train reaches Adversane AHB
+  //activate_AHB(CRAY_LANE);
+  //delay(40e3);                  // train reaches Adversane AHB
   if (debug) Serial.println("arrived at Adversane");
   activate_AHB(ADVERSANE);
   delay(40e3);

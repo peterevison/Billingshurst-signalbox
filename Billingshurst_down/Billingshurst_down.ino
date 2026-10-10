@@ -61,10 +61,10 @@ void loop() {
   if (debug) Serial.println("train in section 2, signal A");
   while (digitalRead(signal_read_pin)) delay(interval);  // pause at lamp 2 until distant A lever is reversed (all clear, on)
   if (debug) Serial.println("signal A is off");
-  delay(interval * 20);       //Lamp 2 to lamp 3 is a long section
+  delay(interval * 5);       //Lamp 2 to lamp 3 is a long section
   if (debug) Serial.println("arrived at Barns Green");
   activate_AHB(BARNS_GREEN);  // train reaches Barns Green AHB
-  delay(20e3);
+  delay(40e3);
   for (int lamp_no = 3; lamp_no <= 6; lamp_no++) {      // continue to section 6 regardless of signals
     interval = multi * (analogRead(analogPin) + mini);  // read speed input pin (from pot) to set interval
     if (debug) {
